@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://northwestern-adea.uprisingtech.com/styles/app-6648a24b50.css">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!-- FontAwesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+	
+	<title>Profile Style Guide</title>
+</head>
+
+<body>
+	<div class="guide-wrapper container">
+		<section id="intro">
+			<h2>Our Northwestern Profile Style Guide</h2>
+		</section>
+
+		    <div class="container">
+    	<ul>
+    		<li><a href="#bootstrap-grid">Bootstrap Grid</a></li>
+    		<li><a href="#spacing">Spacing</a></li>
+    		<li><a href="#cards">Sections/Cards</a></li>
+    		<li><a href="#type">Typography</a></li>
+    		<li><a href="#buttons">Edit & Add Buttons/Toggles/Checkboxes</a></li>
+    		<li><a href="#modals">Modal Windows</a></li>
+    		<li><a href="#inputs">Text Inputs and Dropdowns</a></li>
+    	</ul>
+    </div>
+
+		<section id="bootstrap-grid" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Bootstrap Grid</h2>
+					<div class="card-content">
+						<div class="guide-sub-head">General Grid</div>
+						<p>
+							The entire content of the profile page is within a <code>&lt;div class="container"&gt;</code>.
+						</p>
+						<p>
+							The <code>#at-a-glance</code> section is contained within its own <code>&lt;div class="col-12"&gt;</code> so that it's always full-width.
+						</p>
+						<p>
+							The <code>#education</code>, <code>#professional-exp</code>, and <code>#personal-info</code> sections are all contained within <code>&lt;div class="col-lg-8 col-sm-12"&gt;</code> so that they switch to full-width at the lg bootstrap breakpoint.
+						</p>
+						<p>
+							The <code>#contact</code> section is contained within <code>&lt;div class="col-lg-4 col-sm-12"&gt;</code> so that it switches to full-width at the lg bootstrap breakpoint.
+						</p>
+						<div class="guide-sub-head">Nested Grids</div>
+						<p>
+							Most div's within a section have the class <code>col-12</code> to ensure they remain full-width
+						</p>
+						<p>
+							The <code>#contact</code> section has several column classes to ensure some information switches from being inline with its subheader (when the section is full-width at smaller screen widths) to being below its subheader (when the section is a sidebar at larger screen widths):<br>
+							<pre>&lt;div class="card-content-category-sub col-4 col-lg-12"&gt;Personal (Preferred)&lt;/div&gt;
+&lt;div class="card-content-category-info col-8 col-lg-12"&gt;cat@alum.northwestern.edu&lt;/div&gt;
+&lt;div class="card-content-category-sub col-4 col-lg-12"&gt;Work&lt;/div&gt;
+&lt;div class="card-content-category-info col-8 col-lg-12"&gt;cat.fields@abbot.com&lt;/div&gt;
+</pre>
+						</p>
+						<p>
+							The <code>#personal-info</code> section has a similar nested bootstrap grid to achieve the same inline subhead/information layout:
+							<pre>&lt;div id="names-full" class="card-content-category-sub col-4"&gt;Full Name&lt;/div&gt;
+&lt;div id="names-full" class="card-content-category-info col-8"&gt;Ms. Catrina Fields&lt;/div&gt;
+</pre>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="spacing" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Spacing</h2>
+					<div class="card-content">
+						<p>
+							All spacing uses multiples of rem for margins, padding, and typography.
+						</p>
+						<p>	
+							Most elements that are related are separated by 1 rem, and elements that are unrelated are separated by 2 rem.<br>Below is a list of spacing styles for reference:
+						</p>
+						<div id="section-spacing" class="guide-sub-head">Sections/Cards</div>
+						<p>
+							All sections/cards are separated by a bottom margin of 30px:<br>
+							<code>section.row{ margin-bottom: 30px; }</code>
+						</p>
+						<p>
+							Sections/cards have a padded header div "card-top":<br>
+							<code>.card-top{ padding: 1rem 1.5rem 1rem 1.5rem; }</code>
+						</p>
+						<p>
+							Content within sections/cards are padded:<br>
+							<code>.card-content{ width: 100%; padding: 1rem 1.5rem; }</code>
+						</p>
+						<div id="info-field-spacing" class="guide-sub-head">Info Fields</div>
+						<p>
+							Info field categories (with subheads like "Northwestern Education" and "Reunion Year") all have a bottom margin of 1 rem:<br>
+							<code>`.card-content-category:last-child *:last-child { margin-bottom: 0; }</code>
+						</p>
+						<div class="guide-sub-head">Subheads</div>
+						<p>
+							All subheads (".card-content-category-name") have a bottom margin of 0.3125 rem (5px):<br>
+							<code>.card-content-category-name{ margin-bottom: 0.3125rem; }</code>
+						</p>
+						<div id="logos-icons" class="guide-sub-head">Logos/Icons and Indented Info</div>
+						<p>
+							Info fields like "Northwestern Education" and "Life Events" have logos/icons that float left of the field's information.
+						</p>
+						<p>
+							Logos/Icons are contained within <code>&lt;div class="logo-wrapper"&gt;</code> tags, and have a fixed width, height, and right margin:<br>
+							<pre>.logo-wrapper{ 
+	width: 50px;
+	height: 50px;
+	margin-right: 1rem;
+}</pre>
+						</p>
+						<p>Information to the right of a logo/icon has a width equal to the width of its parent container, minus the sum of the logo/icon and its margin:
+							<code>.info-wrapper{ display: inline-block; width: calc(100% - 66px); }</code>
+						</p>
+						<p>
+						<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+								<div class="card-content-category row no-gutters">
+							    	<div class="card-content-category-name col-12">Northwestern Education</div>
+							    	<div class="card-content-stacked-info">
+								    	<div class="logo-wrapper"><img src="NU_logo.jpg"></div>
+								    	<div class="info-wrapper">
+								    		<div class="title">Northwestern University</div>
+										    McCormick School of Engineering<br>
+										    BS, Environmental Engineering<br>
+										    Class of 2008
+								    	</div>
+							    	</div>
+							    	
+						    	</div>
+							</div>
+						</div>
+						</p>
+						<p>
+							You can use <code>.card-content-narrow</code> to achieve the same effect without a logo/icon.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="cards" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Sections/Cards</h2>
+					<div class="card-content">
+						<div class="guide-sub-head">Box-shadow</div>
+						<p>
+							All content sections/cards have a box-shadow (except for the contact section):<br>
+							<code>.card-wrapper{ box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2); }</code>
+						</p>
+						<p>
+						</p>
+						<div class="guide-sub-head">The “At a Glance” Section</div>
+						<p>
+							The <code>#at-a-glance</code> section is the only part of the profile that is center-aligned.
+						</p>
+						<p>
+							The <code>.at-a-glance-background-img</code> is the background image at the top of the section:<br>
+							<pre>.at-a-glance-background-img{
+	display: block;
+	width: 100%;
+	height: 240px;
+	background: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-375.jpg');
+}</pre>
+						</p>
+						<p>ARD will host this image on its own CDN (assets.ard.northwestern.edu) to allow it to update this background without Uprising intervention.</p>
+						<p>
+							Profile pictures are 167x167px images within <code>.at-a-glance-picture-container</code>:
+							<pre>.at-a-glance-picture-container{
+	position: relative;
+	width: 175px;
+	height: 175px;
+	margin: 0 auto;
+	margin-top: -87px;
+}
+
+.at-a-glance-picture-container img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border: 4px solid #ffffff;
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+}</pre>
+
+						</p>
+						<p>
+							Social media icons have 1 rem margins on their left and right:<br>
+							<code>#at-a-glance .socials a{ margin: 0 1rem 0 1rem; }</code>
+						</p>
+						<p>The presence of the social media icons should be conditional on that respective field being filled in. In most cases, there may be only one or no icons present.
+						<p>
+						<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+								<section id="at-a-glance" class="row">
+									<div class="col-12">
+								    	<div class="card-wrapper">
+								    		<div class="at-a-glance-background-img pattern"></div>
+								    		<div class="at-a-glance-picture-container">
+									    		<img src="ProfilePicture.jpg">
+									    		<div class="picture-edit"><a href="#" data-toggle="modal" data-target="#modalPicture"><i class="fas fa-pencil-alt"></i></a> </div>
+								    		</div>
+								    		<div class="card-content">
+									    		<h1 class="profile-name">Catrina Fields</h1>
+									    		<div class="profile-affiliation">McC ’08</div>
+									    		<div class="profile-job">Abbot Laboratories, Senior Engineer</div>
+									    		<div class="profile-location">Lake Bluff, Illinois</div>
+									    		<div class="profile-phone">815-345-2943</div>
+									    		<div class="profile-email">cat.fields@alum.northwestern.edu</div>
+									    		<div class="socials">
+										    		<a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a>
+									    		</div>
+									    		<div class="manage-profile">
+										    		<a href="#" data-toggle="modal" data-target="#modalPrivacy">Manage Privacy</a><a href="#" data-toggle="modal" data-target="#modalSubscriptions">Manage Subscriptions</a>
+									    		</div>
+										    	
+								    		</div>
+								    	</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						</p>
+						<div class="guide-sub-head">The "Contact" Section</div>
+						<p>
+							The <code>#contact</code> section has no box-shadow: <code>#contact.card-wrapper{ box-shadow: none; }</code>
+						</p>
+						<p>
+							The <code>#contact</code> section uses different background/font colors.
+						</p>
+						<p>
+							Contact Header:<br>
+							<code>#contact.card-top{ color: white; background-color:}</code>
+						</p>
+						<p>
+						<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+								<section id="contact" class="row">
+								    <div class="col-12">
+								    	<div class="card-wrapper">
+									    	<div class="card-top">Contact Info</div>
+								    	</div>
+								    </div>
+								</section>
+							</div>
+						</div>
+						</p>
+						<p>
+							Contact Subheads:<br>
+							<code>#contact .card-content-category-name { color: #4e2a84; }</code>
+						</p>
+						<p>
+							<code>#contact .card-content-category-sub { color: #342F2E; }</code>
+						</p>
+						<p>Background-color:<br>
+							<code>#contact .card-wrapper { background: #E4E0EE; }</code>
+						</p>
+						<p>
+						<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+								<section id="contact" class="row">
+								    <div class="col-12">
+								    	<div class="card-wrapper">
+									    	<div class="card-content">
+										    	<!-- Email -->
+										    	<div class="card-content-category row no-gutters">
+											    	<div class="card-content-category-name col-12">Email<a data-toggle="modal" data-target="#modalEmail" ><i class="fas fa-pencil-alt"></i></a></div>
+											    	<div class="card-content-category-sub col-4 col-lg-12">Personal (Preferred)</div>
+											    	<div class="card-content-category-info col-8 col-lg-12">cat@alum.northwestern.edu</div>
+											    	<div class="card-content-category-sub col-4 col-lg-12">Work</div>
+											    	<div class="card-content-category-info col-8 col-lg-12">cat.fields@abbot.com</div>
+										    	</div>
+									    	</div>
+
+								    	</div>
+								    </div>
+								</section>
+							</div>
+						</div>
+						</p>
+						<div class="guide-sub-head">Spacing</div>
+						<p>
+							For information on how to space sections see <a href="#section-spacing" style="text-decoration: underline;">the spacing section</a> of this guide.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="type" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Typography</h2>
+					<div class="card-content">
+						<div class="guide-sub-head">Size/Color</div>
+						<p>
+							Body text = Akkurat Pro Regular, 16px (1 rem), #342F2E:<br>
+							<code>body{ font-family: 'Akkurat Pro Regular', sans-serif; font-size: 16px; color: #342F2E; }</code>
+						</p>
+						<p>
+							Profile user name = Campton Book, 2 rem, #4e2a84:<br>
+							<code>h1.profile-name{ font-family: 'Campton Book'; font-size: 2rem; color: #4e2a84; line-height: 25px; }</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div id="at-a-glance" class="card-content">
+							    	<h1 class="profile-name">Catrina Fields</h1>
+						    	</div>
+							</div>
+						</div>
+						</p>
+						<p>
+							Section headers = Campton Book, 1.4 rem, #4e2a84:<br>
+							<code>.card-top{ font-family: 'Campton Book'; font-size: 1.4rem; color: #4e2a84; }</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="card-top">Section Header</div>
+							</div>
+						</div>
+						</p>
+						<p>
+							Section Subheads = Akkurat Pro Regular, 1.125 rem, #836eaa:<br>
+							<code>.card-content-category-name{ font-family: 'Akkurat Pro Regular'; font-size 1.125rem; color:#836eaa; }</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="card-content">
+							    	<div class="card-content-category-name">Section Subheader</div>
+						    	</div>
+							</div>
+						</div>
+						</p>
+						<p>
+							Section Sub-Subheads = Akkurat Pro Regular, 0.9 rem, #716c6b:<br>
+							<code>.card-content-category-sub{ font-family: 'Akkurat Pro Regular'; font-size 0.9rem; color:#716c6b; }</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="card-content">
+							    	<div class="card-content-category-sub">Sub-Subheader</div>
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<p>
+							Titles (names, jobs, event types) are bold:<br>
+							<code>.title{ font-family: 'Akkurat Pro Bold';}</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="card-content">
+							    	<div class="title">This is the Title</div>
+									Information<br>
+									Info, Info<br>
+									More Information
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Spacing</div>
+						<p>
+							For information on how to space headers/subheads see <a href="#info-field-spacing" style="text-decoration: underline;">the spacing section</a> of this guide.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="buttons" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Edit & Add Buttons/Toggles/Checkboxes</h2>
+					<div class="card-content">
+						<div class="guide-sub-head">Pencil (Edit Field) Buttons <a style="font-size: 1.125rem;"><i class="fas fa-pencil-alt"></i></a></div>
+						<p>
+							The pencil icon is from FontAwesome and implemented using the following HTML: <code>&lt;i class="fas fa-pencil-alt"&gt;&lt;/i&gt;</code>
+						</p>
+						<p>
+							Pencil button sizes are set by their parent <code>&lt;a&gt;</code> tag
+						</p>
+						<p>
+							All pencil buttons are 1.125 rem in size and float right:<br>
+							<code>.card-content-category-info a, .card-content-category-name a, .title a{ font-size: 1.125rem; float: right; }</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="card-content row no-gutters">
+							    	<div class="card-content-category-name col-12">Subhead<a style="color: #4e2a84;"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<div class="col-12 title">Title<a style="color: #4e2a84;"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<div class="card-content-category-info col-12">Information<a style="color: #4e2a84;"><i class="fas fa-pencil-alt"></i></a></div>
+
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">"Add New" Buttons</div>
+						<p>
+							Add new buttons have a 1px solid border of #4e2a84, transparent backgrounds, #4e2a84 font color, 100% width and padding/margins:
+							<pre>a.add-new{
+	display: inline-block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+}
+
+a.add-new:hover{
+	border: 1px solid #836EAA;
+	color: #836EAA;
+}</pre>
+						</p>
+						<p>
+							Add new buttons has a CSS plus sign that floats right, implemented with <code>&lt;div id="cross"&gt;&lt;/div&gt;</code>:
+							<pre>#cross {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	float: right;
+	margin-top: 3px;
+}
+
+#cross:before, #cross:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: #4e2a84;
+}
+
+a.add-new:hover #cross:before, a.add-new:hover #cross:after{
+	background: #836EAA;
+}</pre>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="card-content">
+							    	<div class="card-content-category row no-gutters">
+								    	<a href="#" class="add-new add-new-education" data-toggle="modal" data-target="#modalEducation">
+								    		Add New <div id="cross"></div></i>
+								    	</a>
+							    	</div>
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Toggles</div>
+						<p>
+							Quite a bit (too much for a style guide) goes into making custom toggle buttons work, but its a <code>&lt;button&gt;</code> with the following classes: <code>btn</code> <code>btn-xs</code> and <code>btn-toggle</code>
+						</p>
+						<p>
+							The sliding handle is implemented with <code>&lt;div class="handle"&gt;&lt;/div&gt</code> within the <code>&lt;button&gt;</code> parent.
+						</p>
+						<p>
+							When a toggle button is <code>.active</code> it has a background of #4e2a84:<br>
+							<code>.btn-toggle.active { background-color: #4e2a84; }</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<form class="form-content-wrapper">
+							    	<div class="toggle-text" style="max-width: 400px;">
+										I currently work here
+										<button type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
+									</div>
+									<div class="toggle-text" style="max-width: 400px;">
+										This is my primary employment
+										<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
+									</div>	
+								</form>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Radio Buttons</div>
+						<p>
+							Radio buttons float left of the information they are paired with by way of <code>.logo-wrapper</code> and <code>.info-wrapper</code>. See the <a style="text-decoration: underline;" href="#logos-icons">spacing</a> section for more info on how those work.
+						</p>
+						<p>
+							The custom radio buttons are styled by hiding the <code>&lt;input type="radio"&gt;</code>, and styling <code>&lt;div class="check"&gt;&lt;/div&gt;</code> within the input's <code>&lt;label&gt;</code>.
+						</p>
+						<p>
+							Each <code>&lt;label&gt;</code> tag is a child of a <code>&lt;li&gt;</code> within an <code>&lt;ul&gt;</code>. Interactions are implemented by <code>ul li:hover .check{}</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<form class="form-content-wrapper">
+							    	<ul>
+								    	<div class="card-content-stacked-info">
+									    	<li>
+									    		<label>
+									    			<div class="logo-wrapper">
+										    			<input type="radio" id="full" name="privacy" value="full" checked="">
+										    			<div class="check"></div>
+									    			</div>
+													<div class="info-wrapper">
+														<div class="title">Title</div>
+														<div class="helper-text">Helper text for this option.</div>
+													</div>
+									    		</label>
+									    	</li>
+									    	<li>
+									    		<label>
+									    			<div class="logo-wrapper">
+										    			<input type="radio" id="full" name="privacy" value="full">
+										    			<div class="check"></div>
+									    			</div>
+													<div class="info-wrapper">
+														<div class="title">Title</div>
+														<div class="helper-text">Helper text for this option.</div>
+													</div>
+									    		</label>
+									    	</li>
+								    	</div>
+							    	</ul>
+						    	</form>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Checkboxes</div>
+						<p>
+							Checkboxes are styled by essentially the same process as radio buttons, except instead of <code>&lt;input type="radio"&gt;</code>, and styling <code>&lt;div class="check"&gt;&lt;/div&gt;</code>, we use <code>&lt;input type="checkbox"&gt;</code>, and styling <code>&lt;div class="check-box"&gt;&lt;/div&gt;</code>			</p>
+						<p>
+							Interactions are implemented by <code>ul li:hover .check-box{}</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<form class="form-content-wrapper">
+							    	<ul>
+								    	<div class="card-content-stacked-info">
+									    	<li>
+									    		<label>
+									    			<div class="logo-wrapper">
+										    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+										    			<div class="check-box"></div>
+									    			</div>
+													<div class="info-wrapper" style="line-height: 2.1875rem;">
+														Checkbox 1
+													</div>
+									    		</label>
+									    	</li>
+									    	<li>
+									    		<label>
+									    			<div class="logo-wrapper">
+										    			<input type="checkbox" id="full" name="privacy" value="full">
+										    			<div class="check-box"></div>
+									    			</div>
+													<div class="info-wrapper" style="line-height: 2.1875rem;">
+														Checkbox 2
+													</div>
+									    		</label>
+									    	</li>
+								    	</div>
+							    	</ul>
+						    	</form>
+							</div>
+							</div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="modals" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Modal Windows</h2>
+					<div class="card-content">
+						<p>
+							Modal windows are implemented with <a style="text-decoration: underline" href="https://getbootstrap.com/docs/4.0/components/modal/" target="_blank">Bootstraps's built-in modal component</a>.
+						</p>
+						<p>
+							Modal windows have a height of 100% and a max-height of 660px so that it has a lightbox effect on desktop, but fills the screen vertically on mobile devices:
+							<pre>.modal-content {
+	border-radius: 0;
+	border: none;
+	/* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+	width:inherit;
+	height: 100%;
+	/* To center horizontally */
+	margin: 0 auto;
+}
+
+.modal-dialog{
+	overflow-y: initial !important;
+	height: 100%;
+	max-height: 660px;
+}</pre>
+						</p>
+						<p>
+							Modals are vertically centered using parent divs <code>.vertical-alignment-helper</code> and <code>.vertical-align-center</code>:
+							<pre>.vertical-alignment-helper {
+	display:table;
+	height: 100%;
+	width: 100%;
+}
+.vertical-align-center {
+	/* To center vertically */
+	display: table-cell;
+	vertical-align: middle;
+}</pre>
+
+						</p>
+						<div class="guide-sub-head">Modal Header</div>
+						<p>
+							The modal header attempts to mimic the global header for the directory. It also has a height of 55px and a #4e2a84 background:
+							<pre>.modal-header {
+	background-color: #4e2a84;
+	border-radius: 0;
+	font-family: "Akkurat Pro Regular";
+	color: white;
+	text-align: center;
+	height: 55px;
+}
+.modal-header h5{
+	font-family: 'Campton Book';
+	font-size: 1.25rem;
+}</pre>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="modal-header">
+							    	<h5>Modal Header</h5>
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Cancel Button</div>
+						<p>
+							The save button floats left in the modal header, is 100x41px, has a transparent background, border, and white text:
+							<pre>button.cancel-btn {
+	float: left;
+	width: 100px;
+	height: 41px;
+	background-color: transparent;
+	color: white;
+	border: 2px solid #836EAA;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	outline: 0;
+	margin-top: -9px;
+}</pre>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="modal-header">
+							    	<button class="cancel-btn" style="cursor: pointer;">cancel</button>
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Save Button</div>
+						<p>
+							The save button floats to the right in the modal header and is also 100x41, but it has a lighter purple background, no border, and white text:
+							<pre>button.cancel-btn {
+	float: left;
+	width: 100px;
+	height: 41px;
+	background-color: transparent;
+	color: white;
+	border: 2px solid #836EAA;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	outline: 0;
+	margin-top: -9px;
+}</pre>
+						</p>
+						<p>
+							Until a field has been changed, there is nothing to save, so the save button should stay in a <code>disabled</code> state:<br>
+							<code>button:disabled{ pointer-events: none; opacity: 0.7; }</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="modal-header">
+							    	<button class="cancel-btn" style="cursor: pointer;">Cancel</button>
+							    	<button class="save-btn btn-primary" disabled>Save</button>
+							    	<button class="save-btn btn-primary" style="cursor: pointer;">Save</button>
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Delete Button</div>
+						<p>
+							The delete button appears within <code>&lt;div class="modal-footer"&gt;</code> tag when something you are editing is deletable:
+							<pre>button.btn-delete {
+	outline: 0;
+	padding: 1rem;
+	font-size: 1rem;
+	margin: 0 auto;
+	background-color: transparent;
+	border: 4px solid #b6acd1;
+	color: #b6acd1;;
+	height: 77px;
+}
+
+button.btn-delete.btn-primary {
+	position: relative;
+	outline: 0;
+	height: 77px;
+	padding: 1rem;
+	font-size: 1rem;
+	padding-bottom: 1rem;
+	width: 100%;
+	max-width: 348px;
+	margin: 0 auto;
+}</pre>
+						</p>
+						<p>When the delete button is clicked it enters a confirmation state, changing to a red background with white text, and a new confirmation message. Information isn't deleted until after the second (confirmation) button is clicked:<br>
+							<pre>.btn-delete.btn-primary.btn-delete-confirmation {
+	background: #ff0000;
+	color: white;
+	border: none;
+}</pre>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="modal-footer">
+							    	<button class="btn-delete btn-primary" style="cursor: pointer;">Delete Entry</button>
+		    	<button class="btn-delete btn-primary btn-delete-confirmation" style="display: none; cursor: pointer;">Are you sure you want to delete?</button>
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Bootstrap .btn-primary</div>
+						<p>The bootstrap <code>.btn-primary</code> class is used for both the save and delete buttons because I wanted to carry over the existing button hover animation from the OurNorthwestern directory.</p>
+						<p>NOTE: while the animation itself is the same, several properties have been altered (most obviously, colors).</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+		<section id="inputs" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Text Inputs and Dropdowns</h2>
+					<div class="card-content">
+						<div class="guide-sub-head">Style</div>
+						<p>
+							I tried making text input fields and dropdowns as close to the existing design for inputs on the OurNorthwestern directory. This means no border-radius, a 1px solid off-black border, and a #4e2a84 border when selected using the <code>.form-control</code> class.
+						</p>
+						<p>
+							NOTE: I did not mimic the input fields from the directory perfectly, but the closer it is the better for continuity’s sake.
+						</p>
+						<div class="guide-sub-head">Medium/Third Wide Inputs</div>
+						<p>
+							To have an input (text or dropdown) span about 45% of its container's width use <code>.med-wide</code>
+						</p>
+						<p>
+							To have an input (text or dropdown) span about 30% of its container's width use <code>.third-wide</code>
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+							    	<div class="form-wide">
+										<div class="med-wide">
+										<label for="state">State</label>
+										<select name="state" class="form-control">
+											<option value="med-wide">.med-wide</option>
+											<option value="il">IL</option>
+										</select>
+										</div>
+										<div class="third-wide float-right">
+										<label for="zip">ZIP Code</label>
+										<input name="zip" type="text" class="form-control" placeholder=".third-wide">
+										</div>
+									</div>
+							</div>
+							</div>
+						</p>
+						<div class="guide-sub-head">Input Error State</div>
+						<p>
+							If someone tries to save an invalid input for any given information field, an error state would take effect for that input.
+							<pre>label.error-state::after {
+	content: ' *';
+	color: #ff0000;
+}
+
+input.form-control.error-state {
+    border: 1px solid;
+    border-color: #ff0000;
+    box-shadow: 0px 0px 3px 0px rgba(255,0,0,0.3);
+    margin-bottom: 0;
+}
+
+input.form-control.error-state ~ .error-state-msg {
+	color: #ff0000;
+	font-size: 0.9rem;
+}</pre>
+						</p>
+						<p>
+							For example, if a user enters a string in a phone number input:
+						</p>
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+							    	<div class="form-wide">
+										<div class="med-wide">
+										<label for="mobile-number" class="error-state">Mobile Number</label>
+										<input name="mobile-number" type="text" class="form-control error-state">
+										<div class="error-state-msg">This is not a valid phone number.</div>
+										</div>
+									</div>
+							</div>
+							</div>
+						</p>
+
+					
+					<div class="guide-sub-head">Input Helper text</div>
+						<p>
+							Helper text should appear above the input element it is assisting. 
+						</p>
+
+						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+							    	<div class="form-wide">
+										<div class="med-wide">
+										<label for="mobile-number" >Mobile Number</label>
+										<div class="helper-text">Please enter your phone number.</div>
+										<input name="mobile-number" type="text" class="form-control">
+										</div>
+									</div>
+							</div>
+
+
+
+							</div>
+						</p>
+						</div>
+					</div>
+			</div>
+		</section>
+
+
+
+		<section id="typeaheads" class="row">
+			<div class="col-12">
+				<div class="card-wrapper guide-content">
+					<h2>Typeaheads and multiple-input typeaheads</h2>
+					<div class="card-content">
+						<div class="guide-sub-head">Single-input Typeahead</div>
+						<p>
+							We have not provisioned this, but it can copy the <code>.angucomplete-dropdown</code> currently in use in the directory.
+
+
+						<div class="guide-sub-head">Multiple-input typeaheads</div>
+						<p>
+							This tag-style inputs are useful for fields in which the user will select multiple entries, but where checkboxes are impractical because of the sheer number of possible answers. Like the single-input typeaheads, the suggested text should use the same style as the autocomplete dropdowns in the directory.
+						</p>
+						<p>
+							<div class="guide-example">
+								<div class="guide-example-head"><h5>example</h5></div>
+								<div class="guide-example-content">
+
+									<form class="form-content-wrapper">
+						
+										<div class="form-group">
+											<label for="student-activities">Student activities</label>
+											<input style="outline: none;" class="form-control" name="student-activites" data-role="tagsinput" value="Environmental Engineering Undergraduate Society, Society of Women Engineers, Engineers for a Sustainable World, A&O Productions, Daily Northwestern">
+											
+
+										</div>				
+									</form>
+
+								</div>
+							</div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+
+    
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="forms.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="bootstrap-tagsinput.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+</body>
+
+</html>
