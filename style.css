@@ -1461,6 +1461,7 @@ input[type=checkbox]:checked ~ .check-box:before {
 
 footer {
 	height: 100px;
+	background-color: #4e2a84;
 }
 	
 /* Error states */
