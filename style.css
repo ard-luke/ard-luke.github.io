@@ -769,12 +769,29 @@ body.modal-open {
 	font-family: "Akkurat Pro Regular";
 	color: white;
 	text-align: center;
+	height: 55px;
+    padding: 1rem;
 }
 
 .modal-header h5 {
 	font-family: "Campton Book", sans-serif;
 	margin-bottom: 0;
 	line-height: 1;
+	display: block;
+    position: relative;
+    margin: 3px auto;
+}
+
+.modal-header button{
+    position: absolute;
+}
+
+.modal-header button.cancel-btn {
+    left: 0.5rem;
+}
+
+.modal-header button.save-btn {
+    right: 0.5rem;
 }
 
 .modal-content {
