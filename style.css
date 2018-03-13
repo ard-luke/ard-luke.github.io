@@ -1454,6 +1454,10 @@ input[type=checkbox]:checked ~ .check-box:before {
    padding: 0px 3px 0px 0.5rem;
 }
 
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+	cursor: pointer;
+}
+
 .footer-buffer {
     display: block;
     height: 100px;
