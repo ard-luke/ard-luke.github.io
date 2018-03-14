@@ -80,13 +80,19 @@ $( document ).ready(function() {
 		
 		console.log("this is working");
 		$(this).hide();
-		$(this).siblings('.btn-delete.btn-delete-confirmation').show();
+		$(this).siblings('.btn-delete-confirmation-msg').show();
 		
 		return;
 	});
 	
-	$('.btn-delete-confirmation').on('click', function(){
-		$(this).parent().parent().parent().parent().parent().parent().modal('hide');
+	$('.btn-delete-cancel').on('click', function(){
+		$('.btn-delete-confirmation-msg').hide();
+		$('.btn-delete.btn-primary').show();
+	})
+	
+	$('.btn-delete-confirm').on('click', function(){
+		$('.btn-delete-confirmation-msg').hide();
+		$(this).parent().parent().parent().parent().parent().parent().parent().modal('hide');
 	});
 	
 	
@@ -95,7 +101,7 @@ $( document ).ready(function() {
 	$('a.edit-education').on('click', function(){
 		
 		$('.btn-delete.btn-primary').show();
-		$('.btn-delete.btn-delete-confirmation').hide();
+		$('.btn-delete-confirmation').hide();
 		
 		$('#modalEducation').find('h5').html('Edit Education');
 		
@@ -155,7 +161,7 @@ $( document ).ready(function() {
 	
 	$('a.edit-life-event').on('click', function(){
 		$('.btn-delete.btn-primary').show();
-		$('.btn-delete.btn-delete-confirmation').hide();
+		$('.btn-delete-confirmation').hide();
 		
 		$('#modalLifeEvent').find('h5').html('Edit Life Event');
 		

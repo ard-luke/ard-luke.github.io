@@ -419,7 +419,6 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 	line-height: 25px;
 }
 
-
 #at-a-glance .socials a {
 	font-size: 2rem;
 	margin: 1rem;
@@ -728,6 +727,52 @@ button.btn-delete.btn-primary {
 	width: 100%;
 	max-width: 348px;
 	margin: 0 auto;
+}
+
+.modal-footer>:not(:first-child) {
+	margin-left: auto;
+}
+
+.btn-delete-confirmation-msg {
+	position: relative;
+	outline: 0;
+	height: 77px;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 348px;
+	margin: 0 auto;
+}
+
+button.btn-delete-confirm.btn-primary {
+    background: transparent;
+    color: red;
+    min-width: 120px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    float: right;
+}
+
+button.btn-delete-cancel.btn-primary {
+    background: transparent;
+    color: #716C6B;
+    min-width: 120px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: 1rem;
+    float: right;
+}
+
+button.btn-delete-confirm.btn-primary:before {
+	background: red;
+}
+
+button.btn-delete-confirm.btn-primary:hover,
+button.btn-delete-cancel.btn-primary:hover{
+	color: white;
+}
+
+.btn-delete-confirmation-msg {
+
 }
 
 .helper-text {
