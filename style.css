@@ -399,17 +399,16 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 }
 
 #at-a-glance .manage-profile a {
-	font-size: 14px;
-	color: #716C6B;
-	display: inline-block;
-	width: 50%;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-align: center;
+	display: block;
+	width: 100%;
+	background: #4e2a84;
+	color: white;
+	font-family: "Akkurat Pro Regular", sans-serif;
+	padding: 0.5rem 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 #at-a-glance .manage-profile a:hover {
-	color: #4E2A84;
 	text-decoration: none;
 }
 
@@ -419,6 +418,7 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 	color: #4E2A84;
 	line-height: 25px;
 }
+
 
 #at-a-glance .socials a {
 	font-size: 2rem;
@@ -438,7 +438,7 @@ section#at-a-glance.row {
 	float: none;
 }
 
-.card-content > :last-child { margin-bottom: 0 !important;}
+.card-content > :last-child { margin-bottom: 0 !important; }
 
 #web-social svg {
 	margin-right: 0.3125rem;
