@@ -74,7 +74,6 @@ $( document ).ready(function() {
 		}
 	});
 	
-	
 	/* delete button */	
 	$('.btn-delete.btn-primary').on('click', function(){
 		
@@ -94,14 +93,13 @@ $( document ).ready(function() {
 		$('.btn-delete-confirmation-msg').hide();
 		$(this).parent().parent().parent().parent().parent().parent().parent().modal('hide');
 	});
-	
-	
+
 	/* EDUCATION MODAL HACKS */
 	
 	$('a.edit-education').on('click', function(){
 		
 		$('.btn-delete.btn-primary').show();
-		$('.btn-delete-confirmation').hide();
+		$('.btn-delete-confirmation-msg').hide();
 		
 		$('#modalEducation').find('h5').html('Edit Education');
 		
