@@ -71,7 +71,7 @@
 						    		<a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a>
 					    		</div>
 					    		<div class="manage-profile">
-						    		<a href="#" class="btn-primary" data-toggle="modal" data-target="#modalPrivacy">Manage Privacy</a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalSubscriptions">Manage Subscriptions</a>
+						    		<a href="#" class="btn-primary" data-toggle="modal" data-target="#modalPrivacy">Manage Privacy</a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalSubscriptions">Manage Email Subscriptions<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalSubscriptions">Alumni Club Affiliations<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalKellogg">Kellogg Interests</a>
 					    		</div>
 						    	
 				    		</div>
@@ -91,12 +91,11 @@
 				    		<div class="card-content">
 					    		<!-- Northwestern Education -->
 						    	<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Northwestern Education</div>
+							    	<div class="card-content-category-name col-12">Northwestern Degree(s)</div>
 							    	<div class="card-content-stacked-info">
 								    	<div class="logo-wrapper"><img src="NU_logo.jpg"></div>
 								    	<div class="info-wrapper">
-								    		<div class="title">Northwestern University</div>
-										    McCormick School of Engineering<br>
+								    		<div class="title">McCormick School of Engineering</div>
 										    BS, Environmental Engineering<br>
 										    Class of 2008
 								    	</div>
@@ -105,7 +104,7 @@
 						    	</div>
 						    	<!-- Reunion Year -->
 						    	<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Reunion Year<a href="#" data-toggle="modal" data-target="#modalReunion"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<div class="card-content-category-name col-12">Preferred Reunion Year<a href="#" data-toggle="modal" data-target="#modalReunion"><i class="fas fa-pencil-alt"></i></a></div>
 							    	<div class="card-content-category-info card-content-narrow col-12">Class of 2008</div>							    	
 						    	</div>
 						    	<!-- Student Activities -->
@@ -117,16 +116,6 @@
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Varsity Sports<a href="#" data-toggle="modal" data-target="#modalSports"><i class="fas fa-pencil-alt"></i></a></div>
 							    	<div class="card-content-category-info card-content-narrow col-12">Cross Country, Softball</div>							    	
-						    	</div>
-						    	<!-- Club Affiliations -->
-						    	<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Club Affiliations</div>
-							    	<div class="card-content-category-info card-content-narrow col-12">consectetur adipiscing elit</div>							    	
-						    	</div>
-						    	<!-- Club Affiliations (Paid) -->
-						    	<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Club Affiliations (Paid)</div>
-							    	<div class="card-content-category-info card-content-narrow col-12">consectetur adipiscing elit</div>							    	
 						    	</div>
 						    	<!-- Other Education -->
 						    	<div class="card-content-category row no-gutters">
@@ -292,12 +281,12 @@
 						    	<!-- Address -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Address</div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Home (Preferred)<a style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-category-info col-8 col-lg-12"><div id="address-line1">123 North West Dr</div>
+							    	<div class="card-content-category-sub col-4 col-lg-12">Home (Preferred)<a class="address-pencil-desktop" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<div class="card-content-category-info col-8 col-lg-12"><div id="address-line1">123 North West Dr<a class="address-pencil-mobile" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
 								    	<div id="address-line2">Lake Bluff, IL 60044</div>
 							    	</div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Work</div>
-							    	<div class="card-content-category-info col-8 col-lg-12"><div id="address-title">Abbot Laboratories</div>
+							    	<div class="card-content-category-sub col-4 col-lg-12">Work<a class="address-pencil-desktop" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<div class="card-content-category-info col-8 col-lg-12"><div id="address-title">Abbot Laboratories<a class="address-pencil-mobile" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
 								    	<div id="address-line1">100 Abbot Park Rd</div>
 								    	<div id="address-line2">Lake Bluff, IL 60044</div>
 							    	</div>
@@ -1415,6 +1404,141 @@
 </div>
 </div>
 </div>
+
+<!-- Kellogg Modal -->
+<div class="modal" id="modalKellogg" tabindex="-1" role="dialog" aria-labelledby="modalKellogg" aria-hidden="true">
+<div class="vertical-alignment-helper">
+<div class="vertical-align-center">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<button class="cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+				<h5>Kellogg Interests</h5>
+				<button type="button" class="save-btn btn-primary">Save</button>
+
+			</div>
+			
+			<div class="modal-body">
+			
+				<form class="form-content-wrapper">
+					<ul>
+						
+				    	<div class="card-content-stacked-info">
+					    	<div class="title">Connect with Kellogg</div>
+					    <div class="form-group">
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Student Mentoring
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Admissions
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Event Host
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										General Volunteer
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Speaker
+									</div>
+					    		</label>
+					    	</li>
+					    </div>
+				    	</div>
+				    	<div class="card-content-stacked-info">
+					    	<div class="title">Kellogg Resources</div>
+					    <div class="form-group">
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Lifelong Learning
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Career
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="privacy" value="full">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Networking
+									</div>
+					    		</label>
+					    	</li>
+					    </div>
+				    	</div>
+					</ul>
+					<div class="title">Entrepreneurships</div>
+					<div class="toggle-text">
+						<div style="width:70%; display: inline-block;">Would you like to know about opportunities for entrepreneurs?</div>
+						<div style="width:30%; float: right;"><button style="margin-top: 25px;" type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button></div>
+					</div>
+				</form>
+
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
 
 
 <div class="footer-buffer"></div>

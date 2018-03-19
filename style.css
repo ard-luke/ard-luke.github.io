@@ -248,6 +248,7 @@ margin-bottom: 0;
 
 .card-content-indented {
 	padding-left: 67px !important;
+	max-width: calc(100% - 20px);
 }
 
 .card-content-narrow {
@@ -435,6 +436,14 @@ section#at-a-glance.row {
 
 #contact .card-content-category-info a {
 	float: none;
+}
+
+.address-pencil-desktop {
+	display: block;
+}
+
+.address-pencil-mobile {
+	display: none;
 }
 
 .card-content > :last-child { margin-bottom: 0 !important; }
@@ -1397,7 +1406,7 @@ a.preview-changes:hover {
     text-decoration: none;
 }
 
-#modalSubscriptions label .logo-wrapper {
+.form-group label .logo-wrapper {
 	height: 25px;
 }
 
@@ -1575,7 +1584,13 @@ input.form-control.error-state ~ .error-state-msg {
 	section#contact.row {
 		margin-top: 0px;
 	}
+	.address-pencil-mobile {
+	display: block;
+	}
 	
+	.address-pencil-desktop {
+	display: none;
+	}
 }
 
 @media (max-width: 768px) {
