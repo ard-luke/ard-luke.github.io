@@ -132,12 +132,11 @@
 							<div class="guide-example-head"><h5>example</h5></div>
 							<div class="guide-example-content">
 								<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Northwestern Education</div>
+							    	<div class="card-content-category-name col-12">Northwestern Degree(s)</div>
 							    	<div class="card-content-stacked-info">
 								    	<div class="logo-wrapper"><img src="NU_logo.jpg"></div>
 								    	<div class="info-wrapper">
-								    		<div class="title">Northwestern University</div>
-										    McCormick School of Engineering<br>
+								    		<div class="title">McCormick School of Engineering</div>
 										    BS, Environmental Engineering<br>
 										    Class of 2008
 								    	</div>
@@ -227,7 +226,7 @@
 										    		<a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a>
 									    		</div>
 									    		<div class="manage-profile">
-										    		<a href="#" data-toggle="modal" data-target="#modalPrivacy">Manage Privacy</a><a href="#" data-toggle="modal" data-target="#modalSubscriptions">Manage Subscriptions</a>
+										    		<a href="#" class="btn-primary" data-toggle="modal" data-target="#modalPrivacy">Manage Privacy</a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalSubscriptions">Manage Email Subscriptions<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalSubscriptions">Alumni Club Affiliations<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalKellogg">Kellogg Interests</a>
 									    		</div>
 										    	
 								    		</div>
@@ -559,32 +558,34 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 							<div class="guide-example-head"><h5>example</h5></div>
 							<div class="guide-example-content">
 						    	<form class="form-content-wrapper">
-							    	<ul>
-								    	<div class="card-content-stacked-info">
-									    	<li>
-									    		<label>
-									    			<div class="logo-wrapper">
-										    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
-										    			<div class="check-box"></div>
-									    			</div>
-													<div class="info-wrapper" style="line-height: 2.1875rem;">
-														Checkbox 1
-													</div>
-									    		</label>
-									    	</li>
-									    	<li>
-									    		<label>
-									    			<div class="logo-wrapper">
-										    			<input type="checkbox" id="full" name="privacy" value="full">
-										    			<div class="check-box"></div>
-									    			</div>
-													<div class="info-wrapper" style="line-height: 2.1875rem;">
-														Checkbox 2
-													</div>
-									    		</label>
-									    	</li>
-								    	</div>
-							    	</ul>
+							    	<div class="card-content-stacked-info">
+								    <div class="form-group">
+									    <ul>
+								    	<li>
+								    		<label>
+								    			<div class="logo-wrapper">
+									    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+									    			<div class="check-box"></div>
+								    			</div>
+												<div class="info-wrapper">
+													Checkbox 1
+												</div>
+								    		</label>
+								    	</li>
+								    	<li>
+								    		<label>
+								    			<div class="logo-wrapper">
+									    			<input type="checkbox" id="full" name="privacy" value="full">
+									    			<div class="check-box"></div>
+								    			</div>
+												<div class="info-wrapper">
+													Checkbox 2
+												</div>
+								    		</label>
+								    	</li>
+									    </ul>
+								    </div>
+							    	</div>
 						    	</form>
 							</div>
 							</div>
@@ -653,7 +654,7 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 							<div class="guide-example">
 							<div class="guide-example-head"><h5>example</h5></div>
 							<div class="guide-example-content">
-						    	<div class="modal-header">
+						    	<div class="modal-header" style="position: relative;">
 							    	<h5>Modal Header</h5>
 						    	</div>
 							</div>
@@ -679,7 +680,7 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 							<div class="guide-example">
 							<div class="guide-example-head"><h5>example</h5></div>
 							<div class="guide-example-content">
-						    	<div class="modal-header">
+						    	<div class="modal-header" style="position: relative;">
 							    	<button class="cancel-btn" style="cursor: pointer;">cancel</button>
 						    	</div>
 							</div>
@@ -702,6 +703,17 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 }</pre>
 						</p>
 						<p>
+							<div class="guide-example">
+							<div class="guide-example-head"><h5>example</h5></div>
+							<div class="guide-example-content">
+						    	<div class="modal-header" style="position: relative;">
+							    	<button class="cancel-btn" style="cursor: pointer;">Cancel</button>
+							    	<button class="save-btn btn-primary" style="cursor: pointer;">Save</button>
+						    	</div>
+							</div>
+							</div>
+						</p>
+						<p>
 							Until a field has been changed, there is nothing to save, so the save button should stay in a <code>disabled</code> state:<br>
 							<code>button:disabled{ pointer-events: none; opacity: 0.7; }</code>
 						</p>
@@ -709,10 +721,9 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 							<div class="guide-example">
 							<div class="guide-example-head"><h5>example</h5></div>
 							<div class="guide-example-content">
-						    	<div class="modal-header">
+						    	<div class="modal-header" style="position: relative;">
 							    	<button class="cancel-btn" style="cursor: pointer;">Cancel</button>
 							    	<button class="save-btn btn-primary" disabled>Save</button>
-							    	<button class="save-btn btn-primary" style="cursor: pointer;">Save</button>
 						    	</div>
 							</div>
 							</div>
@@ -743,11 +754,34 @@ button.btn-delete.btn-primary {
 	margin: 0 auto;
 }</pre>
 						</p>
-						<p>When the delete button is clicked it enters a confirmation state, changing to a red background with white text, and a new confirmation message. Information isn't deleted until after the second (confirmation) button is clicked:<br>
-							<pre>.btn-delete.btn-primary.btn-delete-confirmation {
-	background: #ff0000;
-	color: white;
-	border: none;
+						<p>When the delete button is clicked it reveals a confirmation window. The user is presented with a confirmation message, and the options to CANCEL and DELETE. The information isn't deleted until this second delete button is clicked:<br>
+							<pre>.btn-delete-confirmation-msg {
+	position: relative;
+	outline: 0;
+	height: 77px;
+	font-size: 1rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+button.btn-delete-cancel.btn-primary {
+	background: transparent;
+	color: #716C6B;
+	min-width: 120px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	margin-right: 1rem;
+	float: right;
+}
+
+button.btn-delete-confirm.btn-primary {
+	background: transparent;
+	color: red;
+	min-width: 120px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	float: right;
+	margin-right: 0;
 }</pre>
 						</p>
 						<p>
@@ -756,14 +790,17 @@ button.btn-delete.btn-primary {
 							<div class="guide-example-content">
 						    	<div class="modal-footer">
 							    	<button class="btn-delete btn-primary" style="cursor: pointer;">Delete Entry</button>
-		    	<button class="btn-delete btn-primary btn-delete-confirmation" style="display: none; cursor: pointer;">Are you sure you want to delete?</button>
+							    	<div style="display: none;" class="btn-delete-confirmation-msg">
+								    	Are you sure you want to delete?<br>
+								    	<button class="btn-delete-confirm btn-primary">Delete</button><button class="btn-delete-cancel btn-primary">Cancel</button>
+							    	</div>
 						    	</div>
 							</div>
 							</div>
 						</p>
 						<div class="guide-sub-head">Bootstrap .btn-primary</div>
 						<p>The bootstrap <code>.btn-primary</code> class is used for both the save and delete buttons because I wanted to carry over the existing button hover animation from the OurNorthwestern directory.</p>
-						<p>NOTE: while the animation itself is the same, several properties have been altered (most obviously, colors).</p>
+						<p>NOTE: while the animation itself is the same, several properties have been altered on various classes (most obviously, colors).</p>
 					</div>
 				</div>
 			</div>
