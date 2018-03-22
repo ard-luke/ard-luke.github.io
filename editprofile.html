@@ -117,6 +117,12 @@
 							    	<div class="card-content-category-name col-12">Varsity Sports<a href="#" data-toggle="modal" data-target="#modalSports"><i class="fas fa-pencil-alt"></i></a></div>
 							    	<div class="card-content-category-info card-content-narrow col-12">Cross Country, Softball</div>							    	
 						    	</div>
+						    	<!-- Alumni Club Affiliations -->
+						    	<div class="card-content-category row no-gutters">
+							    	<div class="card-content-category-name col-12">Alumni Club Affiliations</div>
+							    	<div class="card-content-category-info card-content-indented col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac rutrum nulla, eget laoreet tellus.</div>							    	
+						    	</div>
+
 						    	<!-- Other Education -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Other Education</div>
@@ -229,6 +235,8 @@
 							    	<div id="names-nickname" class="card-content-category-info col-8">Cat</div>
 							    	<div id="names-lastname-at-grad" class="card-content-category-sub col-4">Last Name at Graduation</div>
 							    	<div id="names-lastname-at-grad" class="card-content-category-info col-8">Wilde</div>
+							    	<div id="names-lastname-at-grad" class="card-content-category-sub col-4">Professional Suffix</div>
+							    	<div id="names-lastname-at-grad" class="card-content-category-info col-8">PE</div>
 
 
 						    	</div>
@@ -258,15 +266,17 @@
 			    <section id="contact" class="row">
 				    <div class="col-12">
 				    	<div class="card-wrapper">
-					    	<div class="card-top">Contact Info</div>
+					    	<div class="card-top">Contact Information</div>
 					    	<div class="card-content">
 						    	<!-- Email -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Email<a data-toggle="modal" data-target="#modalEmail" ><i class="fas fa-pencil-alt"></i></a></div>
 							    	<div class="card-content-category-sub col-4 col-lg-12">Personal (Preferred)</div>
-							    	<div class="card-content-category-info col-8 col-lg-12">cat@alum.northwestern.edu</div>
+							    	<div class="card-content-category-info col-8 col-lg-12">catfields@gmail.com</div>
 							    	<div class="card-content-category-sub col-4 col-lg-12">Work</div>
 							    	<div class="card-content-category-info col-8 col-lg-12">cat.fields@abbot.com</div>
+							    	<div class="card-content-category-sub col-4 col-lg-12">NU Email</div>
+							    	<div class="card-content-category-info col-8 col-lg-12">cfields1@alum.northwestern.edu</div>
 						    	</div>
 						    	
 						    	<!-- Phone -->
@@ -476,7 +486,7 @@
 				
 				<ul>
 				
-				<div class="card-content-category-name" style=" padding-bottom: 1rem;">Profile visibility for other members</div>
+				<div class="card-content-category-name" style=" padding-bottom: 1rem;">Profile visibility for<br>other Our Northwestern members</div>
 				
 				<div class="card-content-stacked-info col-12">
 				<li><label>
@@ -750,7 +760,7 @@
 			<div class="modal-body">
 			
 				<form class="form-content-wrapper">
-					
+					<!--
 					<div class="form-group">
 						<label for="education-type">Education Type</label>
 						<select class="form-control" name="education-type">
@@ -782,6 +792,23 @@
 							<option value="null">Year</option>
 						</select>
 					</div>
+					-->
+					<label for="school-name">School</label>
+					<div class="helper-text">Helper text (e.g. helper)</div>
+					<input name="school-name" type="text" class="form-control">
+					
+					<label for="degree">Degree</label>
+					<div class="helper-text">Helper text (e.g. helper)</div>
+					<input name="degree" type="text" class="form-control">
+					
+					<label for="major">Major</label>
+					<div class="helper-text">Helper text (e.g. helper)</div>
+					<input name="major" type="text" class="form-control">
+					
+					<label for="class-year">Class Year</label>
+					<div class="helper-text">Helper text (e.g. helper)</div>
+					<input name="class-year" type="text" class="form-control third-wide">
+					
 					<!--					
 					<a href="#" class="preview-changes" target="_blank">Click Here to Manage Email Subscriptions (New Window)</a>
 					-->
@@ -822,9 +849,8 @@
 					
 					<div class="form-group">
 						<label for="reunion-year">Preferred Reunion Year</label>
-						<select class="year-range third-wide form-control" name="reunion-year">
-							<option value="null">Year</option>
-						</select>
+						<div class="helper-text">Helper text (e.g. helper)</div>
+						<input name="reunion-year" type="text" class="form-control third-wide">
 
 					</div>		
 				</form>
@@ -929,26 +955,10 @@
 						<input style="outline: none;" class="form-control" name="job-title">
 						<label for="employer-name">Employer</label>
 						<input style="outline: none;" class="form-control" name="employer-name">
-						<label for="start-date" >From</label>
-						<div class="form-wide">
-							<select name="start-month" id="start-month" class="month-range form-control" placeholder="Month">
-								<option>Month</option>
-							</select>
-								
-							<select name="start-year" id="start-year" class="year-range form-control" placeholder="Year">
-								<option>Year</option>
-							</select>
-						</div>
-						<label for="end-date" >To</label>
-						<div class="form-wide">
-							<select name="end-month" id="end-month" class="month-range form-control" placeholder="Month">
-								<option>Month</option>
-							</select>
-								
-							<select name="end-year" id="end-year" class="year-range form-control" placeholder="Year">
-								<option>Year</option>
-							</select>
-						</div>
+						<label for="start-date" >From (MM/YY)</label>
+						<input name="start-date" type="text" class="form-control third-wide">
+						<label for="end-date" >To (MM/YY)</label>
+						<input name="end-date" type="text" class="form-control third-wide">
 						<div class="toggle-text">
 							I currently work here
 							<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
@@ -989,13 +999,7 @@
 							Preferred Address?
 							<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
 						</div>
-						<div class="toggle-text">
-							Send as a class note?
-							<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
-							<div class="helper-text">
-							This will send your update to the editors of Northwestern Magazine, who may contact you for more information.
-						</div>
-						</div>
+					
 					</div>				
 				</form>
 				
@@ -1035,6 +1039,7 @@
 					
 					<div class="form-group">
 						<label for="industries">Industries</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input style="outline: none;" name="industries" data-role="tagsinput" value="Engineering Services, Management, Consulting Services, Local Government, State Government, Federal Government, Agriculture">
 					
 					</div>				
@@ -1068,14 +1073,6 @@
 				<form class="form-content-wrapper">
 					
 					<div class="form-group">
-						<div class="med-wide">
-							<label for="prefix">Prefix</label>
-							<select name="prefix" class="form-control">
-								<option value="ms">Ms.</option>
-								<option value="ms">Mrs.</option>
-								<option value="mr">Mr.</option>
-							</select>
-						</div>
 						<label for="first-name">First Name</label>
 						<input style="outline: none;" name="first-name" class="form-control">
 						<label for="middle-name">Middle Name</label>
@@ -1096,6 +1093,7 @@
 						</div>
 						<div class="form-group">
 							<label for="suffixes">Professional Suffix(es)</label>
+							<div class="helper-text">Helper text (e.g. helper)</div>
 							<input style="outline: none;" name="suffixes" data-role="tagsinput" value="PhD">
 					
 						</div>	
@@ -1143,30 +1141,9 @@
 						<label for="first-name">First Name</label>
 						<input name="first-name" class="form-control">
 						
-						<label for="last-name">Last Name</label>
-						<input name="last-name" class="form-control">
-						
-						<label for="nu-school">NU School (if NU Alumnus/a)</label>
-						<select name="nu-school" class="form-control med-wide">
-							<option value=""></option>
-							<option value="kellogg">Kellogg</option>
-							<option value="mcc">McCormick</option>
-							<option value="weinberg">Weinberg</option>
-							<option value="comm">School of Communication</option>
-							<option value="medill">Medill</option>
-							<option value="feinberg">Feinberg</option>
-							<option value="bienen">Bienen</option>
-						</select>
-						
-						<label for="nu-degree-yr">NU Degree Year (if NU Alumnus/a)</label>
-						<select name="nu-degree-yr" class="form-control med-wide year-range">
-							<option value="">Year</option>
-						</select>
-						<div class="toggle-text">
-							Send as a class note?
-							<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
-							<div class="helper-text">This will send your update to the editors of Northwestern Magazine, who may contact you for more information.</div>
-						</div>
+						<label for="nu-school">NU School and Degree Year (if NU Alumnus/a)</label>
+						<input name="nu-school" class="form-control">
+					
 					</div>
 									
 				</form>
@@ -1195,7 +1172,7 @@
 			
 			<div class="modal-header">
 				<button class="cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
-				<h5>Email</h5>
+				<h5>Add Email</h5>
 				<button type="button" class="save-btn btn-primary">Save</button>
 
 			</div>
@@ -1223,13 +1200,20 @@
 						<input name="business-email" class="form-control">
 						
 						<label for="vanity-email">Vanity Email</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="vanity-email" class="form-control">
 						
 						<label for="forwarding-email">Forwarding Email</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="forwarding-email" class="form-control">
 						
 						<label for="nu-email">Lifetime Northwestern Email</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="nu-email" class="form-control uneditable" value="catrina.fields@alum.northwestern.edu">
+						
+						<label for="kellogg-email">Lifetime Kellogg Email</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
+						<input name="kellogg-email" class="form-control uneditable" value="catrina.fields@alum.northwestern.edu">
 					</div>
 									
 				</form>
@@ -1277,6 +1261,7 @@
 						<input name="business-phone" class="form-control" value="312-435-3245">
 						
 						<label for="home-phone">Home Phone</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="home-phone" class="form-control">
 					</div>
 									
@@ -1299,7 +1284,7 @@
 			
 			<div class="modal-header">
 				<button class="cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
-				<h5>Edit Home Address</h5>
+				<h5>Add Home Address</h5>
 				<button type="button" class="save-btn btn-primary">Save</button>
 
 			</div>
@@ -1315,9 +1300,6 @@
 						
 						<label for="street-2">Street 2</label>
 						<input name="street-2" class="form-control">
-						
-						<label for="street-3">Street 3</label>
-						<input name="street-3" class="form-control">
 						
 						<label for="city">City</label>
 						<input name="city" class="form-control">
@@ -1378,20 +1360,21 @@
 					
 					<div class="form-group">
 												
-						<label for="work-url">Work Website URL</label>
-						<input name="work-url" class="form-control">
-						
-						<label for="linkedin-url">LinkedIn URL</label>
-						<input name="linkedin-url" class="form-control">
-						
 						<label for="facebook-url">Facebook URL</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="facebook-url" class="form-control">
 						
+						<label for="linkedin-url">LinkedIn URL</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
+						<input name="linkedin-url" class="form-control">
+						
 						<label for="twitter-url">Twitter URL</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="twitter-url" class="form-control">
 						
-						<label for="instagram-url">Instagram URL</label>
-						<input name="instagram-url" class="form-control">
+						<label for="website-url">Website URL</label>
+						<div class="helper-text">Helper text (e.g. helper)</div>
+						<input name="website-url" class="form-control">
 						
 					</div>
 									
@@ -1425,7 +1408,7 @@
 					<ul>
 						
 				    	<div class="card-content-stacked-info">
-					    	<div class="title">Connect with Kellogg</div>
+					    	<div class="title">How do you want to stay involved with Kellogg?</div>
 					    <div class="form-group">
 					    	<li>
 					    		<label>
@@ -1485,7 +1468,7 @@
 					    </div>
 				    	</div>
 				    	<div class="card-content-stacked-info">
-					    	<div class="title">Kellogg Resources</div>
+					    	<div class="title">What Kellogg resources are you interested in?</div>
 					    <div class="form-group">
 					    	<li>
 					    		<label>
@@ -1523,7 +1506,6 @@
 					    </div>
 				    	</div>
 					</ul>
-					<div class="title">Entrepreneurships</div>
 					<div class="toggle-text">
 						<div style="width:70%; display: inline-block;">Would you like to know about opportunities for entrepreneurs?</div>
 						<div style="width:30%; float: right;"><button style="margin-top: 25px;" type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button></div>
