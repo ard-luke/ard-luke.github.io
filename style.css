@@ -389,6 +389,7 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 }
 
 .at-a-glance-picture-container img{
+	width: 100%;
 	max-width: 100%;
 	max-height: 100%;
 }
