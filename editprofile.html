@@ -68,7 +68,7 @@
 					    		<div class="profile-phone">815-345-2943</div>
 					    		<div class="profile-email"><a href="mailto:cat.fields@alum.northwestern.edu">cat.fields@alum.northwestern.edu</a></div>
 					    		<div class="socials">
-						    		<a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a>
+						    		<a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fas fa-globe"></i></a>
 					    		</div>
 					    		<div class="manage-profile">
 						    		<a href="#" class="btn-primary" data-toggle="modal" data-target="#modalPrivacy">Manage Privacy</a><a href="#" class="btn-primary">Manage Email Subscriptions<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" >Follow Alumni Clubs<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" >Submit a Class Note<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalKellogg">Kellogg Interests</a>
@@ -89,6 +89,11 @@
 				    	<div class="card-wrapper">
 					    	<div class="card-top">Education</div>
 				    		<div class="card-content">
+					    		<!-- Privacy Text -->
+					    		<div class="card-content-category row no-gutters">
+						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
+							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your Northwestern education but not your "other education." <a href="#">Manage privacy</a></div>
+					    		</div>
 					    		<!-- Northwestern Education -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Northwestern Degree(s)</div>
@@ -154,6 +159,11 @@
 				    	<div class="card-wrapper">
 					    	<div class="card-top">Professional Experience</div>
 				    		<div class="card-content">
+					    		<!-- Privacy Text -->
+					    		<div class="card-content-category row no-gutters">
+						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
+							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your work experience but not your "industries." <a href="#">Manage privacy</a></div>
+					    		</div>
 					    		<!-- List of jobs -->
 						    	<div id="jobs" class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Experience</div>
@@ -226,6 +236,11 @@
 				    	<div class="card-wrapper">
 					    	<div class="card-top">Personal Info</div>
 				    		<div class="card-content">
+					    		<!-- Privacy Text -->
+					    		<div class="card-content-category row no-gutters">
+						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
+							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your name but not your "relationships." <a href="#">Manage privacy</a></div>
+					    		</div>
 					    		<!-- Names -->
 						    	<div id="names-info" class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Name<a data-toggle="modal" data-target="#modalName"><i class="fas fa-pencil-alt"></i></a></div>
@@ -268,6 +283,11 @@
 				    	<div class="card-wrapper">
 					    	<div class="card-top">Contact Information</div>
 					    	<div class="card-content">
+						    	<!-- Privacy Text -->
+					    		<div class="card-content-category row no-gutters">
+						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
+							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can only see your preferred email and NU email. <a href="#">Manage privacy</a></div>
+					    		</div>
 						    	<!-- Email -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Email<a data-toggle="modal" data-target="#modalEmail" ><i class="fas fa-pencil-alt"></i></a></div>
@@ -307,7 +327,7 @@
 							    	<div class="card-content-category-name col-12">Web and Social Links<a id="websites" data-toggle="modal" data-target="#modalWebsites"><i class="fas fa-pencil-alt"></i></a></div>
 							    	<div class="card-content-category-info col-12"><a ><i class="fab fa-facebook contact-icon"></i><span id="facebook-url">facebook.com/cat.fields</span></a></div>
 							    	<div class="card-content-category-info col-12"><a ><i class="fab fa-linkedin contact-icon"></i><span id="linkedin-url">linkedin.com/catrina_fields</span></a></div>
-							    	<div class="card-content-category-info col-12"><a ><i class="fab fa-instagram contact-icon"></i> <span id="instagram-url">instagram.com/instacat</span></a></div>
+							    	<div class="card-content-category-info col-12"><a ><i class="fab fa-twitter contact-icon"></i> <span id="twitter-url">twitter.com/catfieldsPE</span></a></div>
 							    	<div class="card-content-category-info col-12"><a ><i class="fas fa-globe contact-icon"></i></i> <span id="personal-url">abbotlabs.com/ourteam</span></a></div>
 
 						    	
@@ -920,9 +940,11 @@
 						<label for="student-activities">Varsity Sports</label>
 						<input style="outline: none;" name="student-activites" data-role="tagsinput" value="Cross Country,Softball">
 					
-					</div>				
-				</form>
-				
+					</div>	
+					<div class="helper-text">
+					Letter winner status will be confirmed by the Athletics Department.
+				</div>			
+				</form>				
 			</div>
 			
 			

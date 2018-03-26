@@ -787,9 +787,35 @@ button.btn-delete-cancel.btn-primary:hover{
 }
 
 .helper-text {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	color: #716C6B;
 	text-align: left;
+}
+
+.privacy-text {
+	font-size: 0.8125rem;
+	color: #716C6B;
+	text-align: left;
+	display: inline-block;
+	width: calc(100% - 46px);
+}
+
+.privacy-text a {
+	font-size: 0.8125rem !important;
+	color: #4E2A84 !important;
+}
+
+#contact .privacy-text {
+	color: #342F2E;
+}
+
+.privacy-text-icon {
+	display: inline-block;
+	height: 38px;
+	width: 38px;
+	margin-right: 0.5rem;
+	color: #716C6B;
+	font-size: 1.7rem;
 }
 
 input.form-input {
