@@ -162,7 +162,7 @@
 					    		<!-- Privacy Text -->
 					    		<div class="card-content-category row no-gutters">
 						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
-							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your work experience but not your "industries." <a href="#">Manage privacy</a></div>
+							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can not see your professional experience section. <a href="#">Manage privacy</a></div>
 					    		</div>
 					    		<!-- List of jobs -->
 						    	<div id="jobs" class="card-content-category row no-gutters">
@@ -239,7 +239,7 @@
 					    		<!-- Privacy Text -->
 					    		<div class="card-content-category row no-gutters">
 						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
-							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your name but not your "relationships." <a href="#">Manage privacy</a></div>
+							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your full name and last name at graduation, but no other fields. <a href="#">Manage privacy</a></div>
 					    		</div>
 					    		<!-- Names -->
 						    	<div id="names-info" class="card-content-category row no-gutters">
@@ -286,7 +286,7 @@
 						    	<!-- Privacy Text -->
 					    		<div class="card-content-category row no-gutters">
 						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
-							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can only see your preferred email and NU email. <a href="#">Manage privacy</a></div>
+							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can only see your preferred email and no other data fields. <a href="#">Manage privacy</a></div>
 					    		</div>
 						    	<!-- Email -->
 						    	<div class="card-content-category row no-gutters">
@@ -511,7 +511,7 @@
 				<div class="card-content-stacked-info col-12">
 				<li><label>
 				<div class="logo-wrapper">
-					<input type="radio" id="full" name="privacy" value="full" checked>
+					<input type="radio" id="full" name="privacy" value="full">
 					<div class="check"></div>
 				</div>
 				<div class="info-wrapper">
@@ -537,7 +537,7 @@
 				<div class="card-content-stacked-info col-12">
 				<li><label>
 				<div class="logo-wrapper">
-					<input type="radio" id="limited" name="privacy" value="limited">
+					<input type="radio" id="limited" name="privacy" value="limited" checked="">
 					<div class="check"></div>
 				</div>
 				<div class="info-wrapper">
@@ -1432,21 +1432,10 @@
 				    	<div class="card-content-stacked-info">
 					    	<div class="title">How do you want to stay involved with Kellogg?</div>
 					    <div class="form-group">
-					    	<li>
+						    <li>
 					    		<label>
 					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
-						    			<div class="check-box"></div>
-					    			</div>
-									<div class="info-wrapper">
-										Student Mentoring
-									</div>
-					    		</label>
-					    	</li>
-					    	<li>
-					    		<label>
-					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full">
+						    			<input type="checkbox" id="full" name="admissions" value="true" checked="">
 						    			<div class="check-box"></div>
 					    			</div>
 									<div class="info-wrapper">
@@ -1457,7 +1446,7 @@
 					    	<li>
 					    		<label>
 					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<input type="checkbox" id="full" name="event_host" value="true">
 						    			<div class="check-box"></div>
 					    			</div>
 									<div class="info-wrapper">
@@ -1468,7 +1457,7 @@
 					    	<li>
 					    		<label>
 					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<input type="checkbox" id="full" name="general_volunteer" value="true" checked="">
 						    			<div class="check-box"></div>
 					    			</div>
 									<div class="info-wrapper">
@@ -1479,11 +1468,22 @@
 					    	<li>
 					    		<label>
 					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
+						    			<input type="checkbox" id="full" name="speaker" value="true">
 						    			<div class="check-box"></div>
 					    			</div>
 									<div class="info-wrapper">
 										Speaker
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="student_mentoring" value="true" checked="">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Student Mentoring
 									</div>
 					    		</label>
 					    	</li>
@@ -1492,21 +1492,10 @@
 				    	<div class="card-content-stacked-info">
 					    	<div class="title">What Kellogg resources are you interested in?</div>
 					    <div class="form-group">
-					    	<li>
+						    <li>
 					    		<label>
 					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full" checked="">
-						    			<div class="check-box"></div>
-					    			</div>
-									<div class="info-wrapper">
-										Lifelong Learning
-									</div>
-					    		</label>
-					    	</li>
-					    	<li>
-					    		<label>
-					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full">
+						    			<input type="checkbox" id="full" name="career" value="true">
 						    			<div class="check-box"></div>
 					    			</div>
 									<div class="info-wrapper">
@@ -1517,7 +1506,18 @@
 					    	<li>
 					    		<label>
 					    			<div class="logo-wrapper">
-						    			<input type="checkbox" id="full" name="privacy" value="full">
+						    			<input type="checkbox" id="full" name="lifelong-learning" value="true" checked="">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Lifelong Learning
+									</div>
+					    		</label>
+					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="networking" value="true">
 						    			<div class="check-box"></div>
 					    			</div>
 									<div class="info-wrapper">
@@ -1525,13 +1525,20 @@
 									</div>
 					    		</label>
 					    	</li>
+					    	<li>
+					    		<label>
+					    			<div class="logo-wrapper">
+						    			<input type="checkbox" id="full" name="entrepreneurship" value="true">
+						    			<div class="check-box"></div>
+					    			</div>
+									<div class="info-wrapper">
+										Entrepreneurship
+									</div>
+					    		</label>
+					    	</li>
 					    </div>
 				    	</div>
 					</ul>
-					<div class="toggle-text">
-						<div style="width:70%; display: inline-block;">Would you like to know about opportunities for entrepreneurs?</div>
-						<div style="width:30%; float: right;"><button style="margin-top: 25px;" type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button></div>
-					</div>
 				</form>
 
 				
