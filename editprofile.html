@@ -70,6 +70,38 @@
 					    		<div class="socials">
 						    		<a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fas fa-globe"></i></a>
 					    		</div>
+					    		<ul id="manage-profile-2" style="padding: 0;">
+						    		<li>
+						    			<a data-toggle="modal" data-target="#modalPrivacy">
+							    		<span style="font-size: 1.8rem;"><i class="fas fa-eye"></i></span></span><br>
+						    			Manage Privacy
+						    			</a>
+						    		</li>
+						    		<li>
+						    			<a>
+							    		<span style="font-size: 1.8rem;"><i class="fas fa-at"></i></span><br>
+						    			Manage Email Subscriptions
+						    			</a>
+						    		</li>
+						    		<li>
+						    			<a>
+							    		<span style="font-size: 1.8rem;"><i class="fas fa-users"></i></span><br>
+						    			Follow Alumni Clubs
+						    			</a>
+						    		</li>
+						    		<li>
+						    			<a>
+							    		<span style="font-size: 1.8rem;"><i class="far fa-sticky-note"></i></span><br>
+						    			Submit a Class Note
+						    			</a>
+						    		</li>
+						    		<li>
+						    			<a data-toggle="modal" data-target="#modalKellogg">
+							    		<span style="font-size: 1.8rem;"><i class="fas fa-briefcase"></i></span><br>
+						    			Kellogg Interests
+						    			</a>
+						    		</li>
+					    		</ul>
 					    		<div class="manage-profile">
 						    		<a href="#" class="btn-primary" data-toggle="modal" data-target="#modalPrivacy">Manage Privacy</a><a href="#" class="btn-primary">Manage Email Subscriptions<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" >Follow Alumni Clubs<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" >Submit a Class Note<i style="float: right; margin-top: 2px;" class="fas fa-external-link-alt"></i></a><a href="#" class="btn-primary" data-toggle="modal" data-target="#modalKellogg">Kellogg Interests</a>
 					    		</div>
@@ -244,30 +276,89 @@
 					    		<!-- Names -->
 						    	<div id="names-info" class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Name<a data-toggle="modal" data-target="#modalName"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div id="names-full" class="card-content-category-sub col-4">Full Name</div>
-							    	<div id="names-full" class="card-content-category-info col-8">Ms. Catrina Fields</div>
-							    	<div id="names-nickname" class="card-content-category-sub col-4">Nickname</div>
-							    	<div id="names-nickname" class="card-content-category-info col-8">Cat</div>
-							    	<div id="names-lastname-at-grad" class="card-content-category-sub col-4">Last Name at Graduation</div>
-							    	<div id="names-lastname-at-grad" class="card-content-category-info col-8">Wilde</div>
-							    	<div id="names-lastname-at-grad" class="card-content-category-sub col-4">Professional Suffix</div>
-							    	<div id="names-lastname-at-grad" class="card-content-category-info col-8">PE</div>
-
-
+							    	<!-- Full Name -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="names-full">
+									    		<div class="title"><span id="name-type">Full Name</span></div>
+											    <div id="names-name">Catelyn Wilde</div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- Nickname -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="names-nickname">
+									    		<div class="title"><span id="name-type">Nickname</span></div>
+											    <div id="names-name">Cat</div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- Last Name at Graduation -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="names-lastname-at-grad">
+									    		<div class="title"><span id="name-type">Last Name at Graduation</span></div>
+											    <div id="names-name">Wilde</div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- Professional Suffix -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="names-professional-suffix">
+									    		<div class="title"><span id="name-type">Professional Suffix</span></div>
+											    <div id="names-suffix">PE</div>
+									    	</div>
+								    	</div>
+							    	</div>
 						    	</div>
 						    	<!-- Relationships -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Relationships</div>
-							    	<div class="card-content-category-sub col-4">Spouse/<wbr>Partner</div>
-							    	<div class="card-content-category-info col-8 ">Willie Fields<a data-toggle="modal" data-target="#modalRelationship"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-category-sub col-4">Parent</div>
-							    	<div class="card-content-category-info col-8">Catherine Wilde<a data-toggle="modal" data-target="#modalRelationship"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-category-sub col-4">Sibling</div>
-							    	<div class="card-content-category-info col-8">Catelyn Wilde<a data-toggle="modal" data-target="#modalRelationship"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<!-- Spouse/Partner -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="spouse">
+									    		<div class="title"><span id="relationship-type">Spouse/Partner</span><a style="float:right;" data-toggle="modal" data-target="#modalRelationship"><i class="fas fa-pencil-alt"></i></a></div>
+											    <div id="relationship-name">Willie Fields</div>
+											    <div id="relationship-school">School of Communication, 2013</div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- Parent -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="parent">
+									    		<div class="title"><span id="relationship-type">Parent</span><a style="float:right;" data-toggle="modal" data-target="#modalRelationship"><i class="fas fa-pencil-alt"></i></a></div>
+											    <div id="relationship-name">Catherine Wilde</div>
+											    <div id="relationship-school">School of Professional Studies, 2010</div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- Sibling -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="sibling">
+									    		<div class="title"><span id="relationship-type">Sibling</span><a style="float:right;" data-toggle="modal" data-target="#modalRelationship"><i class="fas fa-pencil-alt"></i></a></div>
+											    <div id="relationship-name">Catelyn Wilde</div>
+									    	</div>
+								    	</div>
+							    	</div>
 							    	<div class="card-content-stacked-info col-12">
-								    	<a data-toggle="modal" data-target="#modalRelationship" id="add-new-life-event" class="add-new">
-								    		Add New <div id="cross"></div></i>
-								    	</a>
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<a id="add-new-relationship" data-toggle="modal" data-target="#modalRelationship" class="add-new">
+									    		Add New <div id="cross"></div></i>
+									    	</a>
+								    	</div>
 							    	</div>
 						    	</div>
 				    		</div>
@@ -291,36 +382,85 @@
 						    	<!-- Email -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Email<a data-toggle="modal" data-target="#modalEmail" ><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Personal (Preferred)</div>
-							    	<div class="card-content-category-info col-8 col-lg-12"><a href="mailto:catfields@gmail.com">catfields@gmail.com</a></div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Work</div>
-							    	<div class="card-content-category-info col-8 col-lg-12"><a href="mailto:cat.fields@abbot.com">cat.fields@abbot.com</a></div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">NU Email</div>
-							    	<div class="card-content-category-info col-8 col-lg-12"><a href="mailto:cfields1@alum.northwestern.edu">cfields1@alum.northwestern.edu</a></div>
-						    	</div>
+							    	<!-- Personal -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="personal-email">
+									    		<div class="title"><span id="email-type">Personal (Preferred)</span></div>
+											    <div id="email-string"><a href="mailto:catfields@gmail.com">catfields@gmail.com</a></div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- Work -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="work-email">
+									    		<div class="title"><span id="email-type">Work</span></div>
+											    <div id="email-string"><span class="helper-text">No information on file.</span></div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- NU Email -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="NU-email">
+									    		<div class="title"><span id="email-type">NU Email</span></div>
+											    <div id="email-string"><a href="mailto:cfields1@alum.northwestern.edu">cfields1@alum.northwestern.edu</a></div>
+									    	</div>
+								    	</div>
+							    	</div>
 						    	
 						    	<!-- Phone -->
-						    	<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Phone<a data-toggle="modal" data-target="#modalPhone"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Mobile (Preferred)</div>
-							    	<div class="card-content-category-info col-8 col-lg-12">815-345-2943</div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Work</div>
-							    	<div class="card-content-category-info col-8 col-lg-12">312-435-3245 x 2345</div>
-						    	</div>
+							    <div class="card-content-category-name col-12">Phone<a data-toggle="modal" data-target="#modalPhone"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<!-- Mobile -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="phone-mobile">
+									    		<div class="title"><span id="phone-type">Mobile (Preferred)</span></div>
+											    <div id="phone-number">815-345-2943</div>
+									    	</div>
+								    	</div>
+							    	</div>
+							    	<!-- Work -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="phone-work">
+									    		<div class="title"><span id="phone-type">Work</span></div>
+											    <div id="phone-number"><span class="helper-text">No information on file.</span></div>
+									    	</div>
+								    	</div>
+							    	</div>
 						    	
 						    	<!-- Address -->
-						    	<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Address</div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Home (Preferred)<a class="address-pencil-desktop" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-category-info col-8 col-lg-12"><div id="address-line1">123 North West Dr<a class="address-pencil-mobile" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
-								    	<div id="address-line2">Lake Bluff, IL 60044</div>
+							    <div class="card-content-category-name col-12">Address</div>
+							    	
+							    	<!-- Home Address -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="address-home">
+									    		<div class="title"><span id="address-type">Home (Preferred)</span><a style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
+											    <div id="address-line-1">123 North West Dr</div>
+											    <div id="address-line-2">Lake Bluff, IL 60044</div>
+									    	</div>
+								    	</div>
 							    	</div>
-							    	<div class="card-content-category-sub col-4 col-lg-12">Work<a class="address-pencil-desktop" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-category-info col-8 col-lg-12"><div id="address-title">Abbot Laboratories<a class="address-pencil-mobile" style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
-								    	<div id="address-line1">100 Abbot Park Rd</div>
-								    	<div id="address-line2">Lake Bluff, IL 60044</div>
+							    	
+							    	<!-- Work Address -->
+							    	<div class="card-content-stacked-info col-12"> 
+								    	<div class="logo-wrapper"></div>
+								    	<div class="info-wrapper">
+									    	<div class="info-group" id="address-work">
+									    		<div class="title"><span id="address-type">Work</span><a style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
+											    <div id="address-line-1"><span class="helper-text">No information on file.</span></div>
+									    	</div>
+								    	</div>
 							    	</div>
-						    	</div>
 						    	
 						    	<!-- Web/Social Links -->
 						    	<div id="web-social" class="card-content-category row no-gutters">
@@ -980,14 +1120,23 @@
 						<label for="start-date" >From (MM/YY)</label>
 						<input name="start-date" type="text" class="form-control third-wide">
 						<label for="end-date" >To (MM/YY)</label>
-						<input name="end-date" type="text" class="form-control third-wide">
-						<div class="toggle-text">
-							I currently work here
-							<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
+						<input id="end-date" name="end-date" type="text" class="form-control third-wide">
+						<div id="end-date" class="helper-text" style="display: none; margin-bottom: 31px;">Present</div>
+						<div class="toggle-text form-group">
+							<span style="float: left;">I currently work here</span>
+							<label>
+							<div class="logo-wrapper" style="height: inherit;">
+								<input type="checkbox" id="current-work" name="admissions" value="true">
+						    	<div class="check-box"></div>
+							</div>
+							</label>
+							<div style="clear: both; margin: 0; padding: 0; height: 0;"></div>
+							
 						</div>
-						<div class="toggle-text">
-							This is my primary employment
-							<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
+						<div class="toggle-text" style="margin-top: -10px;">
+							<span style="float:left;">This is my primary employment</span>
+							<button id="primary-employment-toggle" type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
+							<div style="clear: both; margin: 0; padding: 0; height: 0;"></div>
 						</div>
 					</div>
 					
@@ -1210,7 +1359,7 @@
 							<option value=""></option>
 							<option value="personal">Personal</option>
 							<option value="business">Business</option>
-							<option value="vanity">Vanity Email</option>
+							<option value="vanity">Other Email</option>
 							<option value="forwarding">Forwarding Email</option>
 							<option value="nu">Lifetime Northwestern Email</option>
 						</select>
@@ -1221,7 +1370,7 @@
 						<label for="business-email">Business Email</label>
 						<input name="business-email" class="form-control">
 						
-						<label for="vanity-email">Vanity Email</label>
+						<label for="vanity-email">Other Email</label>
 						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="vanity-email" class="form-control">
 						

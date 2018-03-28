@@ -155,44 +155,23 @@ $( document ).ready(function() {
 	   }
 	});
 	
-	/* LIFE EVENT MODAL HACKS */
-	
-	$('a.edit-life-event').on('click', function(){
-		$('.btn-delete.btn-primary').show();
-		$('.btn-delete-confirmation').hide();
-		
-		$('#modalLifeEvent').find('h5').html('Edit Life Event');
-		
-		$('select[name="life-event-type"]').val('marriage-union').change();
-		$('.default-event').hide();
-		$('.marriage-event').show();
-		$('.birth-event').hide();
-	
+	$('a#add-new-experience').on('click', function(){
+		$('#current-work').prop('checked', true);
+		$('#primary-employment-toggle').addClass('active');
+		$('input#end-date').hide();
+		$('div#end-date').show();
 	});
 	
-	$('select[name="life-event-type"]').on('change',function(){
-	   if($(this).val()=="marriage-event")
-	   {
-	    	$('.default-event').hide();
-			$('.marriage-event').show();
-			$('.birth-event').hide();
-	   }
-	   else
-	   {
-	        if($(this).val()=="birth-event")
-		   {
-		    	$('.default-event').hide();
-				$('.marriage-event').hide();
-				$('.birth-event').show();
-		   }
-		   else
-		   {
-		        $('.default-event').show();
-				$('.marriage-event').hide();
-				$('.birth-event').hide();
-		   }
-	   }
-	});
+	$('#current-work').change(function(){
+		if(this.checked){
+			$('input#end-date').hide();
+			$('div#end-date').show();
+		}
+		else{
+			$('input#end-date').show();
+			$('div#end-date').hide();
+		}
+	})
 		
 	$('a#add-new-experience-inline').on('click', function(){
 		var containingDiv = $(this).parent().parent().parent()

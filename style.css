@@ -394,8 +394,39 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 	max-height: 100%;
 }
 
+ul#manage-profile-2 {
+	display: flex;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 882px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#manage-profile-2 li {
+	font-size: 1rem;
+	line-height: normal;
+	flex-grow: 1;
+	flex-basis: 100px;
+	text-align: center;
+	padding: 0 2rem;
+}
+
+#manage-profile-2 li:not(:last-child) {
+	border-right: 1px solid #ccc;
+}
+
+#manage-profile-2 li a {
+	color: #4e2a84;
+}
+
+#manage-profile-2 li a:hover {
+	color: #836EAA;
+}
+
 #at-a-glance
  .manage-profile {
+	display: none;
 	max-width: 365px;
 	position: relative;
 	margin: 0 auto;
@@ -472,6 +503,14 @@ section#at-a-glance.row {
 
 /* CONTACT SECTION STYLES */
 
+#contact .logo-wrapper {
+	display: none;
+}
+
+#contact .info-wrapper {
+	width: 100%;
+}
+
 #contact .card-wrapper {
 	background: #E4E0EE; 
 	box-shadow: none;
@@ -508,6 +547,10 @@ section#at-a-glance.row {
 
 #contact a:hover {
 	color: #4e2a84;
+}
+
+#contact .card-content-stacked-info:last-child{
+	margin-bottom: 0;
 }
 
 /* Form stuff: */
@@ -1458,12 +1501,12 @@ a.preview-changes:hover {
 	margin-bottom: 0.3rem;
 }
 
-.form-content-wrapper ul li input[type=checkbox]{
+.form-content-wrapper ul li input[type=checkbox], #modalExperience input[type=checkbox]{
 	position: absolute;
 	visibility: hidden;
 }
 
-.form-content-wrapper ul li .check-box{
+.form-content-wrapper ul li .check-box, #modalExperience .check-box{
 	display: block;
 	position: absolute;
 	border: 6px solid #ccc;
@@ -1476,8 +1519,19 @@ a.preview-changes:hover {
 	margin-left: 30px;
 }
 
-.form-content-wrapper ul li:hover .check-box{
+#modalExperience .check-box {
+	position: relative;
+	margin-top: -5px;
+}
+
+#modalExperience .logo-wrapper {
+	float: right;
+	margin: 0;
+}
+
+.form-content-wrapper ul li:hover .check-box, #modalExperience .check-box:hover{
 	border: 8px solid #836EAA;
+	cursor: pointer;
 }
 
 .form-content-wrapper ul li:hover {
@@ -1488,12 +1542,12 @@ a.preview-changes:hover {
 	color: #4e2a84;
 }
 
-input[type=checkbox]:checked ~ .check-box {
+input[type=checkbox]:checked ~ .check-box, #modalExperience input[type=checkbox]:checked ~ .check-box {
 	border: 8px solid #836EAA;
 	background: #836EAA;
 }
 
-input[type=checkbox]:checked ~ .check-box:before {
+input[type=checkbox]:checked ~ .check-box:before, #modalExperience input[type=checkbox]:checked ~ .check-box:before{
 	content: "✓";
 	font-size: 1rem;
 	position: absolute;
@@ -1603,7 +1657,7 @@ input.form-control.error-state ~ .error-state-msg {
 	
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	
 	#web-social svg {
 		margin-right: 1rem;
@@ -1619,6 +1673,37 @@ input.form-control.error-state ~ .error-state-msg {
 	.address-pencil-desktop {
 	display: none;
 	}
+	
+	#contact .logo-wrapper {
+		display: block;
+	}
+	
+	#contact .info-wrapper {
+		width: calc(100% - 66px)
+	}
+	
+	ul#manage-profile-2 {
+		display: none;
+	}
+	
+	.manage-profile {
+		display: block !important;
+	}
+	
+	/*
+	ul#manage-profile-2 {
+		display: block;
+	}
+	
+	#manage-profile-2 li{
+		padding: 0;
+	}
+	
+	#manage-profile-2 li:not(:last-child){
+		border-right: none;
+		padding-bottom: 0.5rem;
+	}
+	*/
 }
 
 @media (max-width: 768px) {
