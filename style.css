@@ -211,6 +211,7 @@ section.row {
 	margin-bottom: 1rem;
 }
 
+
 `.card-content-category:last-child *:last-child {
 margin-bottom: 0;
 }
@@ -861,8 +862,9 @@ button.btn-delete-cancel.btn-primary:hover{
 	height: 38px;
 	width: 38px;
 	margin-right: 0.5rem;
-	color: #716C6B;
+	color: #999;
 	font-size: 1.7rem;
+	line-height: 1;
 }
 
 input.form-input {
