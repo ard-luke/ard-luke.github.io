@@ -435,15 +435,19 @@ ul#manage-profile-2 {
 #at-a-glance .manage-profile a {
 	display: block;
 	width: 100%;
-	background: #4e2a84;
-	color: white;
+	background: white;
+	color: #4e2a84;
 	font-family: "Akkurat Pro Regular", sans-serif;
 	padding: 0.5rem 0.5rem;
 	margin-bottom: 0.5rem;
+	border: 1px solid;
+	border-color: #4e2a84;
 }
 
 #at-a-glance .manage-profile a:hover {
 	text-decoration: none;
+	color: #836EAA;
+	border-color: #836EAA;
 }
 
 #at-a-glance h1.profile-name{
