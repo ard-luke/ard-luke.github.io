@@ -875,6 +875,32 @@ input.form-input {
 	font-size: 1.3rem;
 }
 
+th:not(:first-child),
+td:not(:first-child) {
+   text-align:center;
+   width:15%;
+}
+
+th:first-child {
+   width: 20%;
+}
+
+table {
+   font-size: 0.8125rem;
+   color: #716C6B;
+   text-align: left;
+   line-height: 1;
+}
+
+td {
+   padding-bottom: 0.5rem;
+   padding-top: 0.5rem;
+
+}
+tr:not(:last-child) td {
+       border-bottom: 1px solid #ccc;  
+}
+
 /* Lightbox Window */
 
 .modal button:hover {
