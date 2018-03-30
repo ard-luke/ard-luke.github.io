@@ -1782,33 +1782,33 @@ input.form-control.error-state ~ .error-state-msg {
 
 @media screen
     and (max-device-width:375px) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-375.jpg'); }
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-345-240.jpg'); }
     }
 
 @media screen
     and (min-device-width:376px)
-    and (max-device-width: 750px) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-750.jpg'); }
+    and (max-device-width: 767px) {
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-510-240.jpg'); }
     }
 
 @media screen
-    and (min-device-width:751px)
-    and (max-device-width: 1024px) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg'); }
+    and (min-device-width:768px)
+    and (max-device-width: 991px) {
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-690-240.jpg'); }
     }
 
 @media screen
-    and (min-device-width:1025px)
+    and (min-device-width:992px)
     and (max-device-width: 1199px) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg'); }
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-930-240.jpg'); }
     }
+
 
 
 @media screen 
   and (min-device-width: 1200px) { 
-        .at-a-glance-background-img {    background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1600.jpg'); }
+        .at-a-glance-background-img {    background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1110-240.jpg'); }
     }
-
 
 
 /* ----------- Retina Screens ----------- */
@@ -1816,43 +1816,43 @@ input.form-control.error-state ~ .error-state-msg {
     and (-webkit-min-device-pixel-ratio: 2.0),
     screen 
     and (max-device-width: 375px) and (min-resolution: 2ppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-750.jpg'); 
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-690-480.jpg'); 
       }
     }
 
 @media screen
     and (min-device-width:376px)
-    and (max-device-width: 750px)
+    and (max-device-width: 767px)
     and (-webkit-min-device-pixel-ratio: 2.0),
     screen
     and (min-device-width:376px)
-    and (max-device-width: 750px)
+    and (max-device-width: 767px)
     and (min-resolution: 2dppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg');
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1020-480.jpg');
       }
     }
 
 @media screen
-    and (min-device-width:751px)
-    and (max-device-width: 1024px)
+    and (min-device-width:768px)
+    and (max-device-width: 991px)
     and (-webkit-min-device-pixel-ratio: 2.0),
     screen
-    and (min-device-width:751px)
-    and (max-device-width: 1024px)
+    and (min-device-width:768px)
+    and (max-device-width: 991px)
     and (min-resolution: 2dppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1600.jpg');
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1380-480.jpg');
       }
     }
 
 @media screen
-    and (min-device-width:1025px)
+    and (min-device-width:992px)
     and (max-device-width: 1199px)
     and (-webkit-min-device-pixel-ratio: 2.0),
     screen
-    and (min-device-width:1025px)
+    and (min-device-width:992px)
     and (max-device-width: 1199px)
     and (min-resolution: 2dppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg');
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1860-480.jpg');
       }
     }
 
@@ -1862,7 +1862,7 @@ input.form-control.error-state ~ .error-state-msg {
   screen 
   and (min-device-width: 1200px) 
   and (min-resolution: 2dppx) {
-    .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-3200.jpg'); 
+    .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-2220-480.jpg'); 
     }
   }
 
