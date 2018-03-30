@@ -1,67 +1,67 @@
 /* FONTS */
 
 @font-face {
-    font-family: "Akkurat Pro Regular";
-    src: url(https://common.northwestern.edu/v8/css/fonts/AkkuratProRegular.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Akkurat Pro Regular";
+		font-style : normal;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/AkkuratProRegular.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Akkurat Pro Italic";
-    src: url(https://common.northwestern.edu/v8/css/fonts/AkkuratProItalic.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Akkurat Pro Italic";
+		font-style : normal;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/AkkuratProItalic.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Akkurat Pro Bold";
-    src: url(https://common.northwestern.edu/v8/css/fonts/AkkuratProBold.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Akkurat Pro Bold";
+		font-style : normal;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/AkkuratProBold.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Akkurat Pro Bold Italic";
-    src: url(https://common.northwestern.edu/v8/css/fonts/AkkuratProBoldItalic.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Akkurat Pro Bold Italic";
+		font-style : ;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/AkkuratProBoldItalic.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Campton Book";
-    src: url(https://common.northwestern.edu/v8/css/fonts/CamptonBook.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Campton Book";
+		font-style : normal;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/CamptonBook.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Campton Bold";
-    src: url(https://common.northwestern.edu/v8/css/fonts/CamptonBold.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Campton Bold";
+		font-style : normal;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/CamptonBold.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Campton Extra Bold";
-    src: url(https://common.northwestern.edu/v8/css/fonts/CamptonExtraBold.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Campton Extra Bold";
+		font-style : normal;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/CamptonExtraBold.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Campton Extra Light";
-    src: url(https://common.northwestern.edu/v8/css/fonts/CamptonExtraLight.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
+		font-family: "Campton Extra Light";
+		font-style : normal;
+		font-weight: 400;
+		src        : url(//common.northwestern.edu/v8/css/fonts/CamptonExtraLight.woff) format("woff");
 }
 
 /* GENERAL */
 
 html, body {
+	color      : #342F2E;
 	font-family: 'Akkurat Pro Regular', Helvetica Neue, Arial, sans-serif;
-	font-size: 16px;
-	color: #342F2E;
+	font-size  : 16px;
 }
 
 .focus {
@@ -69,25 +69,25 @@ html, body {
 }
 
 html a {
-	color: #4e2a84;
+	color : #4e2a84;
 	cursor: pointer;
 }
 
 /* TOP NAVBAR STYLES FROM EXISTING DIRECTORY */
 
 .page-header {
-	margin: 0;
-	padding: 0;
 	background-color: #4e2a84;
-	border-bottom: 0 none;
+	border-bottom   : 0 none;
+	margin          : 0;
+	padding         : 0;
 }
 
 .page-header>.wrapper {
-	height: 55px;
-	zoom: 1;
-	width: 100%;
+	height   : 55px;
+	margin   : 0 auto;
 	max-width: 1120px;
-	margin: 0 auto;
+	width    : 100%;
+	zoom     : 1;
 }
 
 .page-header>.wrapper:after,
@@ -113,32 +113,32 @@ body .logo {
 }
 
 body .page-header .logo a.logo-title {
-    width: 288px;
-    height: 33px;
-    background-image: url('our-nw-logo.svg');
+	background-image: url('our-nw-logo.svg');
+	height          : 33px;
+	width           : 288px;
 }
 
 body .logo a.logo-title {
-    display: block;
-    text-indent: -9999px;
-    background-repeat: no-repeat;
-    background-size: contain;
+	background-repeat: no-repeat;
+	background-size  : contain;
+	display          : block;
+	text-indent      : -9999px;
 }
 
 a.logo-title {
-    margin-top: 0;
-    font-family: 'Akkurat Pro Regular',Arial,'Lucida Grande',sans-serif;
-    text-align: center;
-    line-height: 33px;
-    display: table-cell;
-    vertical-align: middle;
+	display       : table-cell;
+	font-family   : 'Akkurat Pro Regular',Arial,'Lucida Grande',sans-serif;
+	line-height   : 33px;
+	margin-top    : 0;
+	text-align    : center;
+	vertical-align: middle;
 }
 
 .page-header>.wrapper .avatar-nav .navbar-nav {
-    display: table-cell;
-    vertical-align: middle;
-    list-style-type: none;
-    line-height: 44px;
+	display        : table-cell;
+	line-height    : 44px;
+	list-style-type: none;
+	vertical-align : middle;
 }
 
 .navbar-nav {
@@ -150,7 +150,7 @@ a.logo-title {
 }
 
 up-navbar a {
-	color: white;
+		color: white;
 }
 
 /* BOOTSTRAP BUTTON STYLES FROM EXISTING DIRECTORY */
@@ -168,15 +168,15 @@ section.row {
 }
 
 .card-content{
-	width: 100%;
 	padding: 1rem 1.5rem;
+	width  : 100%;
 }
 
 .card-top {
-    color: #4e2a84;
-    font-family: "Campton Book", serif;
-    font-size: 1.4rem;
-    padding: 1rem 1rem 1rem 1.5rem;
+	color      : #4e2a84;
+	font-family: "Campton Book", serif;
+	font-size  : 1.4rem;
+	padding    : 1rem 1rem 1rem 1.5rem;
 }
 
 .card-content-category {
@@ -211,36 +211,35 @@ section.row {
 	margin-bottom: 1rem;
 }
 
-
-`.card-content-category:last-child *:last-child {
-margin-bottom: 0;
+.card-content-category:last-child *:last-child {
+	margin-bottom: 0;
 }
 
 .logo-wrapper {
-	display: block;
-	width: 50px;
-	height: 50px;
-	float: left;
+	border      : none;
+	color       : #B6ACD1;
+	display     : block;
+	float       : left;
+	font-size   : 2.5rem;
+	height      : 50px;
 	margin-right: 1rem;
-	border: none;
-	color: #B6ACD1;
-	font-size: 2.5rem;
-	text-align: center;
+	text-align  : center;
+	width       : 50px;
 }
 
 .logo-wrapper .title {
+	color    : #342F2E;
 	font-size: 1rem;
-	color: #342F2E;
 }
 
 .logo-wrapper img {
-	width: 100%;
 	height: auto;
+	width : 100%;
 }
 
 .info-wrapper {
 	display: inline-block;
-	width: calc(100% - 66px);
+	width  : calc(100% - 66px);
 }
 
 .title {
@@ -248,13 +247,13 @@ margin-bottom: 0;
 }
 
 .card-content-indented {
+	max-width   : calc(100% - 20px);
 	padding-left: 67px !important;
-	max-width: calc(100% - 20px);
 }
 
 .card-content-narrow {
+	max-width   : 400px;
 	padding-left: 67px !important;
-	max-width: 400px
 }
 
 
@@ -265,17 +264,17 @@ margin-bottom: 0;
 }
 
 .card-content-category.row.no-gutters a:hover {
-	color: #836EAA;
+	color          : #836EAA;
 	text-decoration: none;
 }
 
 .title a { /* right align FontAwesome pencil icons following bold titles */
-	float: right;
+	float    : right;
 	font-size: 1.125rem;
 }
 
 .card-content-category-info a {
-	float: right;
+	float    : right;
 	font-size: 1.125rem;
 }
 
@@ -290,12 +289,12 @@ margin-bottom: 0;
 /* 'ADD NEW' BUTTON */
 
 a.add-new {
-	display: inline-block;
-	width: 100%;
-	padding: 0.5rem 1rem;
-	border: 1px solid #4e2a84;
-	margin-top: 0.5rem;
+	border       : 1px solid #4e2a84;
+	display      : inline-block;
 	margin-bottom: 1rem;
+	margin-top   : 0.5rem;
+	padding      : 0.5rem 1rem;
+	width        : 100%;
 }
 
 a.add-new:hover {
@@ -307,18 +306,18 @@ a.add-new svg {
 }
 
 #cross {
-   width: 20px;
-   height: 20px;
-   position: relative;
-   float: right;
-   margin-top: 3px;
+	float     : right;
+	height    : 20px;
+	margin-top: 3px;
+	position  : relative;
+	width     : 20px;
 }
 
 #cross:before, #cross:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: #4e2a84;
+	background: #4e2a84;
+	content   : "";
+	position  : absolute;
+	z-index   : -1;
 }
 
 a.add-new:hover #cross:before, a.add-new:hover #cross:after{
@@ -326,17 +325,17 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 }
 
 #cross:before {
-  left: 50%;
-  width: 5%;
-  margin-left: -5%;
-  height: 100%;
+	height     : 100%;
+	left       : 50%;
+	margin-left: -5%;
+	width      : 5%;
 }
 
 #cross:after {
-  top: 50%;
-  height: 5%;
-  margin-top: -5%;
-  width: 100%;
+	height    : 5%;
+	margin-top: -5%;
+	top       : 50%;
+	width     : 100%;
 }
 
 
@@ -348,35 +347,34 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 
 .at-a-glance-background-img {
 	display: block;
-	width: 100%;
-	height: 240px;
+	height : 240px;
+	width  : 100%;
 }
 
 .at-a-glance-picture-container {
-	position: relative;
-	width: 175px;
-	height: 175px;
-	margin: 0 auto;
-	margin-top: -87px;
-	border: 4px solid #ffffff;
-	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3);
-	overflow: hidden;
 	background: #E4E0EE;
-	
+	border    : 4px solid #ffffff;
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3);
+	height    : 175px;
+	margin    : 0 auto;
+	margin-top: -87px;
+	overflow  : hidden;
+	position  : relative;
+	width     : 175px;
 }
 
 
 .picture-edit {
-	position: absolute;
-	width: 167px;
-	height: 23px;
 	background: rgba(0,0,0,0.3);
-    bottom: 0px;
+	bottom    : 0px;
+	height    : 23px;
+	position  : absolute;
+	width     : 167px;
 }
 
 .at-a-glance-picture-container a {
+	color   : white;
 	position: relative;
-	color: white;
 }
 
 .at-a-glance-picture-container a:hover {
@@ -384,33 +382,33 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 }
 
 .at-a-glance-picture-container a svg {
-	margin-top: 4px;
+	float       : right;
 	margin-right: 1rem;
-	float: right;
+	margin-top  : 4px;
 }
 
 .at-a-glance-picture-container img{
-	width: 100%;
-	max-width: 100%;
 	max-height: 100%;
+	max-width : 100%;
+	width     : 100%;
 }
 
 ul#manage-profile-2 {
-	display: flex;
-	list-style: none;
-	margin: 0 auto;
-	max-width: 882px;
-	margin-top: 1rem;
+	display      : flex;
+	list-style   : none;
+	margin       : 0 auto;
 	margin-bottom: 1rem;
+	margin-top   : 1rem;
+	max-width    : 882px;
 }
 
 #manage-profile-2 li {
-	font-size: 1rem;
+	flex-basis : 100px;
+	flex-grow  : 1;
+	font-size  : 1rem;
 	line-height: normal;
-	flex-grow: 1;
-	flex-basis: 100px;
-	text-align: center;
-	padding: 0 2rem;
+	padding    : 0 2rem;
+	text-align : center;
 }
 
 #manage-profile-2 li:not(:last-child) {
@@ -427,41 +425,41 @@ ul#manage-profile-2 {
 
 #at-a-glance
  .manage-profile {
-	display: none;
+	display  : none;
+	margin   : 0 auto;
 	max-width: 365px;
-	position: relative;
-	margin: 0 auto;
+	position : relative;
 }
 
 #at-a-glance .manage-profile a {
-	display: block;
-	width: 100%;
-	background: white;
-	color: #4e2a84;
-	font-family: "Akkurat Pro Regular", sans-serif;
-	padding: 0.5rem 0.5rem;
+	background   : white;
+	border       : 1px solid;
+	border-color : #4e2a84;
+	color        : #4e2a84;
+	display      : block;
+	font-family  : "Akkurat Pro Regular", sans-serif;
 	margin-bottom: 0.5rem;
-	border: 1px solid;
-	border-color: #4e2a84;
+	padding      : 0.5rem 0.5rem;
+	width        : 100%;
 }
 
 #at-a-glance .manage-profile a:hover {
+	border-color   : #836EAA;
+	color          : #836EAA;
 	text-decoration: none;
-	color: #836EAA;
-	border-color: #836EAA;
 }
 
 #at-a-glance h1.profile-name{
-	font-size: 2rem;
+	color      : #4E2A84;
 	font-family: 'Campton Book';
-	color: #4E2A84;
+	font-size  : 2rem;
 	line-height: 25px;
 }
 
 #at-a-glance .socials a {
+	color    : #836EAA;
 	font-size: 2rem;
-	margin: 1rem;
-	color: #836EAA;
+	margin   : 1rem;
 }
 
 #at-a-glance .socials a:hover {
@@ -487,15 +485,15 @@ section#at-a-glance.row {
 .card-content > :last-child { margin-bottom: 0 !important; }
 
 #web-social svg {
+	float       : left;
+	margin-left : 0.3125rem;
 	margin-right: 0.3125rem;
-	margin-left: 0.3125rem;
-	transform: scale(1.5);
-	float: left;
+	transform   : scale(1.5);
 }
 
 #web-social .card-content-category-name svg {
-	transform: scale(1);
 	margin-right: 0.3125rem;
+	transform   : scale(1);
 }
 
 #web-social .card-content-category-info {
@@ -540,13 +538,13 @@ section#at-a-glance.row {
 }
 
 #contact a {
-	color: #342F2E;
-	font-size: 1rem;
+	color      : #342F2E;
+	font-size  : 1rem;
 	line-height: 0.6rem;
 }
 
 #contact a .contact-icon {
-	font-size: 1.2rem;
+	font-size  : 1.2rem;
 	line-height: 1.3rem;
 }
 
@@ -566,17 +564,17 @@ select#start-month {
 }
 
 #names-info input[type="text"] {
-	height: 22px;
 	background-color: rgba(0,0,0,0.03);
-    border: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+	border          : none;
+	border-bottom   : 1px solid rgba(0,0,0,0.1);
+	height          : 22px;
 }
 
 span.twitter-typeahead {
-    width: 100%;
-    position:  absolute !important;
-    top: 0;
-    left: 0;
+	left    : 0;
+	position:  absolute !important;
+	top     : 0;
+	width   : 100%;
 }
 
 .tt-input {
@@ -591,10 +589,10 @@ span.twitter-typeahead {
 
 .tt-menu {
 	background-color: white;
-	position: absolute;
-	border-left: 1px solid rgba(52, 47, 46, 0.2);
-	border-right: 1px solid rgba(52, 47, 46, 0.2);
-	border-bottom: 1px solid rgba(52, 47, 46, 0.2);
+	border-bottom   : 1px solid rgba(52, 47, 46, 0.2);
+	border-left     : 1px solid rgba(52, 47, 46, 0.2);
+	border-right    : 1px solid rgba(52, 47, 46, 0.2);
+	position        : absolute;
 }
 
 .tt-input:focus {
@@ -602,84 +600,83 @@ span.twitter-typeahead {
 }
 
 .tt-suggestion {
-	padding: 0.2rem 0.5rem;
 	border-bottom: 1px solid rgba(52, 47, 46, 0.05);
+	padding      : 0.2rem 0.5rem;
 }
 
 .toolbar {
-	padding-top: 7px;
-	padding-left: 1rem;
+	padding-left : 1rem;
 	padding-right: 1rem;
+	padding-top  : 7px;
 }
 
 #websites svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
-	margin: 0;
+	margin      : 0;
 	margin-right: 0;
 }
 
 #group-info-field input[type="text"] {
-    height: 22px;
-    background-color: rgba(0,0,0,0.03);
-    border: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.03);
+	border          : none;
+	border-bottom   : 1px solid rgba(0,0,0,0.1);
+	height          : 22px;
 }
 
 #contact #group-info-field input[type="text"] {
-    height: 22px;
-    background-color: rgba(250,250,250,0.4);
-    border: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+	background-color: rgba(250,250,250,0.4);
+	border          : none;
+	border-bottom   : 1px solid rgba(0,0,0,0.1);
+	height          : 22px;
 }
 
 button.cancel-btn {
-	float: left;
-	width: 100px;
-	height: 41px;
 	background-color: transparent;
-	color: white;
-	border: 2px solid #836EAA;
-	font-size: 0.8rem;
-	text-transform: uppercase;
-	outline: 0;
-	font-family: "Akkurat Pro Regular", sans-serif;
-	margin-top: -9px;
+	border          : 2px solid #836EAA;
+	color           : white;
+	float           : left;
+	font-family     : "Akkurat Pro Regular", sans-serif;
+	font-size       : 0.8rem;
+	height          : 41px;
+	margin-top      : -9px;
+	outline         : 0;
+	text-transform  : uppercase;
+	width           : 100px;
 }
 
 button.save-btn {
-	float: right;
-	width: 100px;
-	height: 41px;
 	background-color: #836EAA;
-	color: white;
-	border: none;
-	font-size: 0.8rem;
-	text-transform: uppercase;
-	outline: 0;
-	margin-top: -9px;
-	font-family: "Akkurat Pro Regular", sans-serif;
+	border          : none;
+	color           : white;
+	float           : right;
+	font-family     : "Akkurat Pro Regular", sans-serif;
+	font-size       : 0.8rem;
+	height          : 41px;
+	margin-top      : -9px;
+	outline         : 0;
+	text-transform  : uppercase;
+	width           : 100px;
 }
 
 button.save-btn.btn-primary {
-	width: 100px;
-	margin: 0;
-	padding: 0;
-	min-width: 0;
+	border    : 2px solid #836EAA;
+	color     : white;
+	margin    : 0;
 	margin-top: -9px;
-	color: white;
-	border: 2px solid #836EAA;
+	min-width : 0;
+	padding   : 0;
+	width     : 100px;
 }
 
 button.save-btn.btn-primary:disabled {
-	pointer-events: none;
 	background-color: #836EAA;
-	color: rgba(250,250,250,0.5);
-	opacity: 0.7;
-	
+	color           : rgba(250,250,250,0.5);
+	opacity         : 0.7;
+	pointer-events  : none;
 }
 
 .card-content-category.row.no-gutters a.btn-delete-confirmation{
 	background-color: #836EAA;
-	color: white;
+	color           : white;
 }
 
 .btn-primary {
@@ -692,100 +689,98 @@ button.save-btn.btn-primary:disabled {
 
 .btn-delete.btn-primary:hover {
 	background-color: transparent;
-	border: 4px solid #b6acd1;
+	border          : 4px solid #b6acd1;
 }
 
 .btn-delete.btn-primary.btn-delete-confirmation {
 	background: #ff0000;
-	color: white;
-	border: none;
+	color     : white;
+	border    : none;
 }
 
 .btn-delete.btn-primary.btn-delete-confirmation:before{
 	background: #dd0000;
-	color: white;
+	color     : white;
 }
 
 .form-wrapper {
-	position: relative;
-	max-width: 420px;
-	padding: 1.675rem 1.5rem 1rem 1.5rem;
-	margin: 0 auto;
+	margin    : 0 auto;
+	max-width : 420px;
+	padding   : 1.675rem 1.5rem 1rem 1.5rem;
+	position  : relative;
 	text-align: center;
 }
 
 .form-content-wrapper {
-	width: 100%;
-	padding: 0px 1rem 0px 1rem
+	padding: 0px 1rem 0px ;
+	width  : 100%;
 }
 
 .form-picture-container {
-	position: relative;
-	width: 175px;
-	height: 175px;
-	margin: 0 auto;
+	height       : 175px;
+	margin       : 0 auto;
 	margin-bottom: 2rem;
+	position     : relative;
+	width        : 175px;
 }
 
 .form-picture-container img{
-	position: relative;
-	width: 100%;
-	height: auto;
-	border: 4px solid #ffffff;
+	border    : 4px solid #ffffff;
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+	height    : auto;
 	margin-top: 1rem;
+	position  : relative;
+	width     : 100%;
 }
 
 .upload-picture .helper-text {
-	position: relative;
-	display: block;
+	display  : block;
+	margin   : 0 auto;
 	max-width: 348px;
-	margin: 0 auto;
+	position : relative;
 }
 
 button.form-button {
-	position: relative;
-	display: block;
-	background: #4E2A84;
-	width: 100%;
-	font-size: 1rem;
-	color: white;
-	padding: 1rem;
-	max-width: 348px;
-	margin: 1rem auto;
-	border: none;
-	font-family: "Akkurat Pro Regular";
+	background    : #4E2A84;
+	border        : none;
+	color         : white;
+	display       : block;
+	font-family   : "Akkurat Pro Regular";
+	font-size     : 1rem;
+	margin        : 1rem auto;
+	max-width     : 348px;
+	outline       : 0;
+	padding       : 1rem;
+	position      : relative;
 	text-transform: uppercase;
-	outline: 0;
+	width         : 100%;
 }
-
-
 
 button.form-button.btn-primary:hover {
 	background: #4E2A84;
 }
 
 button.btn-delete {
-	outline: 0;
-	padding: 1rem;
-	font-size: 1rem;
-	margin: 0 auto;
 	background-color: transparent;
-	border: 4px solid #b6acd1;
-	color: #b6acd1;;
-	height: 77px;
+	border          : 4px solid #b6acd1;
+	color           : #b6acd1;;
+	font-size       : 1rem;
+	height          : 77px;
+	margin          : 0 auto;
+	outline         : 0;
+	padding         : 1rem;
 }
 
 button.btn-delete.btn-primary {
-	position: relative;
-	outline: 0;
-	height: 77px;
-	padding: 1rem;
-	font-size: 1rem;
+	font-size     : 1rem;
+	height        : 77px;
+	margin        : 0 auto;
+	max-width     : 348px;
+	outline       : 0;
+	padding       : 1rem;
 	padding-bottom: 1rem;
-	width: 100%;
-	max-width: 348px;
-	margin: 0 auto;
+	position      : relative;
+	width         : 100%;
 }
 
 .modal-footer>:not(:first-child) {
@@ -793,32 +788,32 @@ button.btn-delete.btn-primary {
 }
 
 .btn-delete-confirmation-msg {
-	position: relative;
-	outline: 0;
-	height: 77px;
-	font-size: 1rem;
-	margin: 0 auto;
+	font-size : 1rem;
+	height    : 77px;
+	margin    : 0 auto;
+	outline   : 0;
+	position  : relative;
 	text-align: center;
 }
 
 button.btn-delete-confirm.btn-primary {
-    background: transparent;
-    color: red;
-    min-width: 120px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    float: right;
-    margin-right: 0;
+	background   : transparent;
+	color        : red;
+	float        : right;
+	margin-right : 0;
+	min-width    : 120px;
+	padding-left : 0.5rem;
+	padding-right: 0.5rem;
 }
 
 button.btn-delete-cancel.btn-primary {
-    background: transparent;
-    color: #716C6B;
-    min-width: 120px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-right: 1rem;
-    float: right;
+	background   : transparent;
+	color        : #716C6B;
+	float        : right;
+	margin-right : 1rem;
+	min-width    : 120px;
+	padding-left : 0.5rem;
+	padding-right: 0.5rem;
 }
 
 button.btn-delete-confirm.btn-primary:before {
@@ -830,27 +825,23 @@ button.btn-delete-cancel.btn-primary:hover{
 	color: white;
 }
 
-.btn-delete-confirmation-msg {
-
-}
-
 .helper-text {
-	font-size: 0.8125rem;
-	color: #716C6B;
+	color     : #716C6B;
+	font-size : 0.8125rem;
 	text-align: left;
 }
 
 .privacy-text {
-	font-size: 0.8125rem;
-	color: #716C6B;
+	color     : #716C6B;
+	display   : inline-block;
+	font-size : 0.8125rem;
 	text-align: left;
-	display: inline-block;
-	width: calc(100% - 46px);
+	width     : calc(100% - 46px);
 }
 
 .privacy-text a {
+	color    : #4E2A84 !important;
 	font-size: 0.8125rem !important;
-	color: #4E2A84 !important;
 }
 
 #contact .privacy-text {
@@ -858,13 +849,13 @@ button.btn-delete-cancel.btn-primary:hover{
 }
 
 .privacy-text-icon {
-	display: inline-block;
-	height: 38px;
-	width: 38px;
+	color       : #999;
+	display     : inline-block;
+	font-size   : 1.7rem;
+	height      : 38px;
+	line-height : 1;
 	margin-right: 0.5rem;
-	color: #999;
-	font-size: 1.7rem;
-	line-height: 1;
+	width       : 38px;
 }
 
 input.form-input {
@@ -886,19 +877,19 @@ th:first-child {
 }
 
 table {
-   font-size: 0.8125rem;
-   color: #716C6B;
-   text-align: left;
-   line-height: 1;
+	color      : #716C6B;
+	font-size  : 0.8125rem;
+	line-height: 1;
+	text-align : left;
 }
 
 td {
-   padding-bottom: 0.5rem;
-   padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-top   : 0.5rem;
 
 }
 tr:not(:last-child) td {
-       border-bottom: 1px solid #ccc;  
+  border-bottom: 1px solid #ccc;  
 }
 
 /* Lightbox Window */
@@ -908,86 +899,84 @@ tr:not(:last-child) td {
 }
 
 .vertical-alignment-helper {
-    display:table;
-    height: 100%;
-    width: 100%;
+	display:table;
+	height : 100%;
+	width  : 100%;
 }
 .vertical-align-center {
-    /* To center vertically */
-    display: table-cell;
-    vertical-align: middle;
+	/* To center vertically */
+	display       : table-cell;
+	vertical-align: middle;
 }
 
 body.modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .modal-header {
 	background-color: #4e2a84;
-	border-radius: 0;
-	font-family: "Akkurat Pro Regular";
-	color: white;
-	text-align: center;
-	height: 55px;
-    padding: 1rem;
+	border-radius   : 0;
+	color           : white;
+	font-family     : "Akkurat Pro Regular";
+	height          : 55px;
+	padding         : 1rem;
+	text-align      : center;
 }
 
 .modal-header h5 {
-	font-family: "Campton Book", sans-serif;
+	display      : block;
+	font-family  : "Campton Book", sans-serif;
+	line-height  : 1;
+	margin       : 3px auto;
 	margin-bottom: 0;
-	line-height: 1;
-	display: block;
-    position: relative;
-    margin: 3px auto;
+	position     : relative;
 }
 
 .modal-header button{
-    position: absolute;
+  position: absolute;
 }
 
 .modal-header button.cancel-btn {
-    left: 0.5rem;
+  left: 0.5rem;
 }
 
 .modal-header button.save-btn {
-    right: 0.5rem;
+  right: 0.5rem;
 }
 
 .modal-content {
+	border       : none;
 	border-radius: 0;
-	border: none;
-	/* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
-    width:inherit;
-    height: 100%;
-    /* To center horizontally */
-    margin: 0 auto;
+	height       : 100%;
+	margin       : 0 auto;
+	width        :inherit; /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
 }
 
 .modal-dialog{
-      overflow-y: initial !important;
-      height: 100%;
-      max-height: 660px;
+	height    : 100%;
+	max-height: 660px;
+	overflow-y: initial !important;
 }
 .modal-body{
-  height: 250px;
-  overflow-y: auto;
-  padding-top: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+	height       : 250px;
+	overflow-y   : auto;
+	padding-left : 1.5rem;
+	padding-right: 1.5rem;
+	padding-top  : 2rem;
 }
 
 /* Toggles */
 
 .btn-toggle {
-  margin: 0 4rem;
-  padding: 0;
-  position: relative;
-  border: none;
-  height: 1.5rem;
-  width: 3rem;
-  border-radius: 1.5rem;
-  color: #6b7381;
-  background: #bdc1c8;
+	background   : #bdc1c8;
+	border       : none;
+	border-radius: 1.5rem;
+	color        : #6b7381;
+	height       : 1.5rem;
+	margin       : 0 4rem;
+	padding      : 0;
+	position     : relative;
+	width        : 3rem;
 }
 .btn-toggle:focus,
 .btn-toggle.focus,
@@ -997,16 +986,16 @@ body.modal-open {
 }
 .btn-toggle:before,
 .btn-toggle:after {
-  line-height: 1.5rem;
-  width: 4rem;
-  text-align: center;
-  font-weight: 600;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: 0;
-  transition: opacity .25s;
+	bottom        : 0;
+	font-size     : 0.75rem;
+	font-weight   : 600;
+	letter-spacing: 2px;
+	line-height   : 1.5rem;
+	position      : absolute;
+	text-align    : center;
+	text-transform: uppercase;
+	transition    : opacity .25s;
+	width         : 4rem;
 }
 .btn-toggle:before {
   content: '×';
@@ -1403,22 +1392,22 @@ select.form-control#end-month, select.form-control#end-year{
 
 .med-wide {
 	margin-bottom: 1rem;
-	display: inline-block;
-	width: calc(45% - 1rem);
-	margin-right: 1rem;
+	display      : inline-block;
+	width        : calc(45% - 1rem);
+	margin-right : 1rem;
 }
 
 .third-wide {
 	border-radius: 0px !important;
 	margin-bottom: 1rem;
-	display: inline-block;
-	width: calc(30% - 1rem);
-	margin-right: 1rem;
+	display      : inline-block;
+	width        : calc(30% - 1rem);
+	margin-right : 1rem;
 }
 
 .third-wide:last-child {
-    width: 30%;
-    margin-right: 0;
+	width       : 30%;
+	margin-right: 0;
 }
 
 .form-control:focus {
@@ -1434,13 +1423,13 @@ textarea.form-control {
 textarea:focus, input:focus, button:focus { outline: none !important; }
 
 .mock-dropdown {
-	height: 34px;
 	border: 1px solid #ccc;
-	width: auto;
-	font-size: 	0.875rem;
-	text-align: left;
 	color: #555;
-}
+	font-size: 	0.875rem;
+	height: 34px;
+	text-align: left;
+	width: auto;
+	}
 
 .dropdown-toggle:after {
 	margin-left: 1rem;
@@ -1448,14 +1437,13 @@ textarea:focus, input:focus, button:focus { outline: none !important; }
 
 .logo-wrapper input {
 	position: absolute;
-	
 }
 
 .form-content-wrapper ul{
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	overflow: auto;
+	margin    : 0;
+	overflow  : auto;
+	padding   : 0;
 }
 
 .form-content-wrapper ul li{
@@ -1469,16 +1457,16 @@ textarea:focus, input:focus, button:focus { outline: none !important; }
 }
 
 .form-content-wrapper ul li .check{
-	display: block;
-	position: absolute;
-	border: 6px solid;
-	border-color: #ccc;
-	border-radius: 100%;
-	height: 25px;
-	width: 25px;
-	transition: border .25s linear;
 	-webkit-transition: border .25s linear;
-	top: 0.3rem;
+	border            : 6px solid;
+	border-color      : #ccc;
+	border-radius     : 100%;
+	display           : block;
+	height            : 25px;
+	position          : absolute;
+	top               : 0.3rem;
+	transition        : border .25s linear;
+	width             : 25px;
 }
 
 .form-content-wrapper ul li:hover .check{
@@ -1686,7 +1674,6 @@ input.form-control.error-state ~ .error-state-msg {
 	#web-social svg {
 		margin-right: 1rem;
 	}
-	
 }
 
 @media (max-width: 991px) {
@@ -1699,11 +1686,11 @@ input.form-control.error-state ~ .error-state-msg {
 		margin-top: 0px;
 	}
 	.address-pencil-mobile {
-	display: block;
+		display: block;
 	}
 	
 	.address-pencil-desktop {
-	display: none;
+		display: none;
 	}
 	
 	#contact .logo-wrapper {
@@ -1720,22 +1707,7 @@ input.form-control.error-state ~ .error-state-msg {
 	
 	.manage-profile {
 		display: block !important;
-	}
-	
-	/*
-	ul#manage-profile-2 {
-		display: block;
-	}
-	
-	#manage-profile-2 li{
-		padding: 0;
-	}
-	
-	#manage-profile-2 li:not(:last-child){
-		border-right: none;
-		padding-bottom: 0.5rem;
-	}
-	*/
+	}	
 }
 
 @media (max-width: 768px) {
@@ -1784,14 +1756,14 @@ input.form-control.error-state ~ .error-state-msg {
 	
 	a.add-new {
 		display: inline-block;
-		width: 100%;
+		width  : 100%;
 		padding: 0.5rem 1rem;
-		border: 1px solid #4e2a84;
+		border : 1px solid #4e2a84;
 	}
 	
 	.bigger {
-	font-size: 1.5rem;
-}
+		font-size: 1.5rem;
+	}
 
 	body .page-header .logo a.logo-title {
 		width: 200px;
@@ -1838,61 +1810,82 @@ input.form-control.error-state ~ .error-state-msg {
     }
 
 
+
 /* ----------- Retina Screens ----------- */
-@media screen
-    and (max-device-width: 375px)
-    and (min-resolution: 2dppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-750.jpg'); }
+@media screen and (max-device-width: 375px) 
+    and (-webkit-min-device-pixel-ratio: 2.0),
+    screen 
+    and (max-device-width: 375px) and (min-resolution: 2ppx) {
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-750.jpg'); 
+      }
     }
 
 @media screen
     and (min-device-width:376px)
     and (max-device-width: 750px)
+    and (-webkit-min-device-pixel-ratio: 2.0),
+    screen
+    and (min-device-width:376px)
+    and (max-device-width: 750px)
     and (min-resolution: 2dppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg'); }
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg');
+      }
     }
 
 @media screen
     and (min-device-width:751px)
     and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 2.0),
+    screen
+    and (min-device-width:751px)
+    and (max-device-width: 1024px)
     and (min-resolution: 2dppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1600.jpg'); }
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1600.jpg');
+      }
     }
 
 @media screen
     and (min-device-width:1025px)
     and (max-device-width: 1199px)
+    and (-webkit-min-device-pixel-ratio: 2.0),
+    screen
+    and (min-device-width:1025px)
+    and (max-device-width: 1199px)
     and (min-resolution: 2dppx) {
-        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg'); }
+        .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg');
+      }
     }
 
 @media screen 
   and (min-device-width: 1200px) 
-  and (min-resolution: 2ddx) {
-    .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-3200.jpg'); }
-
-}
+  and (-webkit-min-device-pixel-ratio: 2.0),
+  screen 
+  and (min-device-width: 1200px) 
+  and (min-resolution: 2dppx) {
+    .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-3200.jpg'); 
+    }
+  }
 
 /* STYLE GUIDE STUFF */
 
 code {
-    background-color: #f7f7f9;
-    border-radius: .2rem;
-    color: #d44950;
-    padding: 4px 4px;
+		background-color: #f7f7f9;
+		border-radius   : .2rem;
+		color           : #d44950;
+		padding         : 4px 4px;
 }
 
 pre {
-    background-color: #f7f7f9;
-    border-radius: .2rem;
-    color: #d44950;
-    padding: 4px 4px;
-    margin-bottom: 0px;
+		background-color: #f7f7f9;
+		border-radius   : .2rem;
+		color           : #d44950;
+		margin-bottom   : 0px;
+		padding         : 4px 4px;
 }
 
 .guide-wrapper h2, h3, h4 {
+	color      : #4e2a84;
 	font-family: "Campton Book";
-	color: #4e2a84;
 }
 
 .guide-wrapper.container {
@@ -1905,9 +1898,9 @@ section#intro {
 }
 
 #intro h2{
+	color    : white;
 	font-size: 50px;
-	color: white;
-	padding: 1rem 1.5rem 1rem 1.5rem;
+	padding  : 1rem 1.5rem 1rem 1.5rem;
 }
 
 .guide-content h2 {
@@ -1915,31 +1908,31 @@ section#intro {
 }
 
 .guide-sub-head {
-	color: #4e2a84;
-	font-family: 'Akkurat Pro Regular';
-	font-size: 1.4rem;
+	color        : #4e2a84;
+	font-family  : 'Akkurat Pro Regular';
+	font-size    : 1.4rem;
 	margin-bottom: 0.3125rem;
 }
 
 .guide-example {
-	display: block;
-	border: 1px solid rgba(0,0,0,0.1);
+	border    : 1px solid rgba(0,0,0,0.1);
+	display   : block;
 	margin-top: 1rem;
 }
 
 .guide-example-head {
 	background: #f7f7f9;
-	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-	font-size: 0.7rem;
+	font-size : 0.7rem;
+	padding   : 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .guide-example-head h5 {
-	font-size: 0.7rem;
-	font-family: 'Akkurat Pro Regular';
-	margin: 0;
+	color         : #4e2a84;
+	display       : inline-block;
+	font-family   : 'Akkurat Pro Regular';
+	font-size     : 0.7rem;
+	margin        : 0;
 	text-transform: uppercase;
-	display: inline-block;
-	color: #4e2a84;
 }
 
 .guide-example-content {
