@@ -346,6 +346,7 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 }
 
 .at-a-glance-background-img {
+	background-size: cover;
 	display: block;
 	height : 240px;
 	width  : 100%;
