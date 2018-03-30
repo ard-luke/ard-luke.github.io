@@ -1841,28 +1841,28 @@ input.form-control.error-state ~ .error-state-msg {
 /* ----------- Retina Screens ----------- */
 @media screen
     and (max-device-width: 375px)
-    and (min-resolution: 2ddx) {
+    and (min-resolution: 2dppx) {
         .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-750.jpg'); }
     }
 
 @media screen
     and (min-device-width:376px)
     and (max-device-width: 750px)
-    and (min-resolution: 2ddx) {
+    and (min-resolution: 2dppx) {
         .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg'); }
     }
 
 @media screen
     and (min-device-width:751px)
     and (max-device-width: 1024px)
-    and (min-resolution: 2ddx) {
+    and (min-resolution: 2dppx) {
         .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1600.jpg'); }
     }
 
 @media screen
     and (min-device-width:1025px)
     and (max-device-width: 1199px)
-    and (min-resolution: 2ddx) {
+    and (min-resolution: 2dppx) {
         .at-a-glance-background-img { background-image: url('//assets.ard.northwestern.edu/profile/backgrounds/header-background-1024.jpg'); }
     }
 
