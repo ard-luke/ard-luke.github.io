@@ -124,7 +124,7 @@
 					    		<!-- Privacy Text -->
 					    		<div class="card-content-category row no-gutters">
 						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
-							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your Northwestern education but not your "other education." <a href="#">Manage privacy</a></div>
+							    	<div class="privacy-text">Your privacy is set to “limited.” This means only your northwestern degree information and student activities are visible to others. <a href="#">Manage privacy</a></div>
 					    		</div>
 					    		<!-- Northwestern Education -->
 						    	<div class="card-content-category row no-gutters">
@@ -194,7 +194,7 @@
 					    		<!-- Privacy Text -->
 					    		<div class="card-content-category row no-gutters">
 						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
-							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can not see your professional experience section. <a href="#">Manage privacy</a></div>
+							    	<div class="privacy-text">Your privacy is set to “limited.” This means none of your professional experience is visible to others. <a href="#">Manage privacy</a></div>
 					    		</div>
 					    		<!-- List of jobs -->
 						    	<div id="jobs" class="card-content-category row no-gutters">
@@ -262,16 +262,16 @@
 			    	</div>
 		    	</section>
 		    	
-		    	<!-- Personal Info -->
+		    	<!-- Personal Information -->
 		    	<section id="personal-info" class="row">
 			    	<div class="col-12">
 				    	<div class="card-wrapper">
-					    	<div class="card-top">Personal Info</div>
+					    	<div class="card-top">Personal Information</div>
 				    		<div class="card-content">
 					    		<!-- Privacy Text -->
 					    		<div class="card-content-category row no-gutters">
 						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
-							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can see your full name and last name at graduation, but no other fields. <a href="#">Manage privacy</a></div>
+							    	<div class="privacy-text">Your privacy is set to “limited.” This means only your name will be visible to others. Relationship information will be hidden. <a href="#">Manage privacy</a></div>
 					    		</div>
 					    		<!-- Names -->
 						    	<div id="names-info" class="card-content-category row no-gutters">
@@ -377,7 +377,7 @@
 						    	<!-- Privacy Text -->
 					    		<div class="card-content-category row no-gutters">
 						    		<div class="privacy-text-icon"><i class="fas fa-eye"></i></div>
-							    	<div class="privacy-text">You have set your privacy to "limited." This means other alumni can only see your preferred email and no other data fields. <a href="#">Manage privacy</a></div>
+							    	<div class="privacy-text">Your privacy is set to “limited.” This means only your preferred email address will be visible to others. <a href="#">Manage privacy</a></div>
 					    		</div>
 						    	<!-- Email -->
 						    	<div class="card-content-category row no-gutters">
@@ -651,12 +651,25 @@
 				<div class="card-content-stacked-info col-12">
 				<li><label>
 				<div class="logo-wrapper">
-					<input type="radio" id="full" name="privacy" value="full">
+					<input type="radio" id="hide" name="privacy" value="hide">
 					<div class="check"></div>
 				</div>
 				<div class="info-wrapper">
-				<div class="title">Full (Default)</div>
-				<div class="helper-text">This is helper text. It will help the user understand their choice.</div>
+				<div class="title">Private</div>
+				<div class="helper-text">Your name will show up in directory searches, but all other information will be hidden, and there will be no link to your profile.</div>
+				</div>
+				</label></li>
+				</div>
+				
+				<div class="card-content-stacked-info col-12">
+				<li><label>
+				<div class="logo-wrapper">
+					<input type="radio" id="limited" name="privacy" value="limited" checked="">
+					<div class="check"></div>
+				</div>
+				<div class="info-wrapper">
+				<div class="title">Limited (Default)</div>
+				<div class="helper-text">Only some education information and your preferred email address will be visible to the Northwestern community. Professional experience and other contact information will be hidden.</div>
 				</div>
 				</label></li>
 				</div>
@@ -669,7 +682,7 @@
 				</div>
 				<div class="info-wrapper">
 				<div class="title">Basic</div>
-				<div class="helper-text">This is helper text. It will help the user understand their choice.</div>
+				<div class="helper-text">All education and professional experience information will be visible to the Northwestern community, as well as your preferred phone number.</div>
 				</div>
 				</label></li>
 				</div>
@@ -677,25 +690,12 @@
 				<div class="card-content-stacked-info col-12">
 				<li><label>
 				<div class="logo-wrapper">
-					<input type="radio" id="limited" name="privacy" value="limited" checked="">
+					<input type="radio" id="full" name="privacy" value="full">
 					<div class="check"></div>
 				</div>
 				<div class="info-wrapper">
-				<div class="title">Limited</div>
-				<div class="helper-text">This is helper text. It will help the user understand their choice.</div>
-				</div>
-				</label></li>
-				</div>
-				
-				<div class="card-content-stacked-info col-12">
-				<li><label>
-				<div class="logo-wrapper">
-					<input type="radio" id="hide" name="privacy" value="hide">
-					<div class="check"></div>
-				</div>
-				<div class="info-wrapper">
-				<div class="title">Hide My Profile</div>
-				<div class="helper-text">This is helper text. It will help the user understand their choice.</div>
+				<div class="title">Full</div>
+				<div class="helper-text">All information will be visible to the Northwestern community, including all contact information.</div>
 				</div>
 				</label></li>
 				</div>
@@ -706,87 +706,94 @@
 					<tbody>
 						<tr>
 							<th></th>
-							<th>Full</th>
-							<th>Basic</th>
-							<th>Limited</th>
 							<th>Private</th>
+							<th>Limited</th>
+							<th>Basic</th>
+							<th>Full</th>
 						</tr>
 						<tr>
-							<td>All education and activities</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"><i class="fas fa-check"></i></td>
-							<td id="table-private"></td>
+							<td>Name</td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>All professional experience</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Photo</td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>First name, last name, last name at graduation</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"><i class="fas fa-check"></i></td>
-							<td id="table-private"><i class="fas fa-check"></i></td>
+							<td>Northwestern education information</td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>Preferred email</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Other education information</td>
+							<td></td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>Preferred phone</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Student activities, sports, alumni volunteer activities, and alumni club affiliations</td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>Social network and web links</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Professional experience</td>
+							<td></td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>Nicknames, suffixes and professional suffixes</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Preferred email address</td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>Your relationships</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Preferred phone number</td>
+							<td></td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>Your addresses</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Other email addresses and phone numbers</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Additional emails</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>All mailing addresses</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 						<tr>
-							<td>Additional phones</td>
-							<td id="table-full"><i class="fas fa-check"></i></td>
-							<td id="table-basic"><i class="fas fa-check"></i></td>
-							<td id="table-limited"></td>
-							<td id="table-private"></td>
+							<td>Web and social links</td>
+							<td></td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td><i class="fas fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Relationships</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
 						</tr>
 					</tbody>
 				</table>
