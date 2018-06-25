@@ -129,7 +129,7 @@
 					    		<!-- Northwestern Education -->
 						    	<div class="card-content-category row no-gutters">
 							    	<div class="card-content-category-name col-12">Northwestern Degree(s)<a href="#" data-toggle="modal" data-target="#modalReunion"><i class="fas fa-pencil-alt"></i></a></div>
-							    	<div class="card-content-stacked-info">
+							    	<div class="card-content-stacked-info card-content-stacked-info__flex">
 								    	<div class="logo-wrapper"><img src="NU_logo.jpg"></div>
 								    	<div class="info-wrapper">
 								    		<div class="title">School of Communication</div>
@@ -473,114 +473,6 @@
     
 <!--------- ALL MODAL MENUS --------->
 
-<!-- Modal Life Event -->
-<div class="modal" id="modalLifeEvent" tabindex="-1" role="dialog" aria-labelledby="modalLifeEvent" aria-hidden="true">
-<div class="vertical-alignment-helper">
-<div class="vertical-align-center">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-	    <button class="cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
-        <h5>Life Event</h5>
-        <button type="button" class="save-btn btn-primary">Save</button>
-      </div>
-      <div class="modal-body row no-gutters">
-	      		
-		<form class="form-content-wrapper">
-			<div class="form-group med-wide">
-				<label for="life-event-type">Choose Life Event</label>
-				<select name="life-event-type" class="form-control" style="border-radius: 0px; margin-bottom: 1rem;" val="Marriage/Union">
-					<option value="default">Type</option>
-					<option value="marriage-union">Marriage/Union</option>
-					<option value="award">Award</option>
-					<option value="birth-adoption">Birth/Adoption</option>
-					<option value="in-memory">In Memory</option>
-				</select>
-			</div>
-			
-			<!-- Default Form -->
-			<div class="form-group default-event">
-				<label for="default-description">Life Event Description</label>
-				<textarea name="default-description" class="form-control"></textarea>
-				<div class="form-wide">
-					<select class="form-control third-wide day-range" name="day">
-						<option value="day">Day</option>
-					</select>
-					<select class="form-control third-wide month-range" name="month">
-						<option value="month">Month</option>
-					</select>
-					<select class="form-control third-wide year-range" name="year">
-						<option value="year">Year</option>
-					</select>
-				</div>
-				<div class="toggle-text">
-					Send as a class note?
-					<button type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
-					<div class="helper-text">This will send your update to the editors of Northwestern Magazine, who may contact you for more information.</div>
-				</div>
-			</div>
-			
-			<!-- Marriage/Union Form -->
-			<div class="form-group marriage-event" style="display: none;">
-				<label for="partner-name">Spouse/Partner Name</label>
-				<input type="text" name="partner-name" class="form-control">
-				<label for="partner-name">Location</label>
-				<input type="text" name="partner-name" class="form-control">
-				<div class="form-wide">
-					<select class="form-control third-wide day-range" name="day">
-						<option value="day">Day</option>
-					</select>
-					<select class="form-control third-wide month-range" name="month">
-						<option value="month">Month</option>
-					</select>
-					<select class="form-control third-wide year-range" name="year">
-						<option value="year">Year</option>
-					</select>
-				</div>
-				<div class="toggle-text">
-					Send as a class note?
-					<button type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
-					<div class="helper-text">This will send your update to the editors of Northwestern Magazine, who may contact you for more information.</div>
-				</div>
-			</div>	
-			
-			<!-- Birth/Adoption Form -->
-			<div class="form-group birth-event" style="display: none;">
-				<label for="child-name">Child Name(s)</label>
-				<input type="text" name="child-name" class="form-control">
-				<label for="partner-name">Location</label>
-				<input type="text" name="partner-name" class="form-control">
-				<div class="form-wide">
-					<select class="form-control third-wide day-range" name="day">
-						<option value="day">Day</option>
-					</select>
-					<select class="form-control third-wide month-range" name="month">
-						<option value="month">Month</option>
-					</select>
-					<select class="form-control third-wide year-range" name="year">
-						<option value="year">Year</option>
-					</select>
-				</div>
-				<div class="toggle-text">
-					Send as a class note?
-					<button type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
-					<div class="helper-text">This will send your update to the editors of Northwestern Magazine, who may contact you for more information.</div>
-				</div>
-			</div>			
-			
-		</form>
-
-      </div>
-      <div class="modal-footer">
-		    	<button class="save-btn btn-delete btn-primary">Delete Event</button>
-		</div>
-
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
 
 <!-- Change Profile Pic -->
 <div class="modal" id="modalPicture" tabindex="-1" role="dialog" aria-labelledby="modalPicture" aria-hidden="true">
@@ -600,13 +492,13 @@
 		
 		<form class="form-content-wrapper upload-picture">
 		
-			<button class="form-button btn-primary">Upload New Picture</button>
-			<div class="helper-text">This is helper text that will describe this action's requirements.</div>
+			<button class="form-button btn-primary">Change Picture</button>
+			<div class="helper-text">Please share a photo of yourself. Square headshots work best.</div>
 		</form>
 
       </div>
       <div class="modal-footer">
-        <button class="btn-delete btn-primary">Remove Picture</button>
+        <button class="btn-delete btn-primary">Delete Picture</button>
         <div style="display: none;" class="btn-delete-confirmation-msg">
 	    	Are you sure you want to delete?<br>
 	    	<button class="btn-delete-confirm btn-primary">Delete</button><button class="btn-delete-cancel btn-primary">Cancel</button>
@@ -1047,19 +939,15 @@
 					</div>
 					-->
 					<label for="school-name">School</label>
-					<div class="helper-text">Helper text (e.g. helper)</div>
 					<input name="school-name" type="text" class="form-control">
 					
 					<label for="degree">Degree</label>
-					<div class="helper-text">Helper text (e.g. helper)</div>
 					<input name="degree" type="text" class="form-control">
 					
 					<label for="major">Major</label>
-					<div class="helper-text">Helper text (e.g. helper)</div>
 					<input name="major" type="text" class="form-control">
 					
 					<label for="class-year">Class Year</label>
-					<div class="helper-text">Helper text (e.g. helper)</div>
 					<input name="class-year" type="text" class="form-control third-wide">
 					
 					<!--					
@@ -1099,7 +987,7 @@
 			<div class="modal-body">
 			
 				<form class="form-content-wrapper">
-					<div class="helper-text">Some alumni, such as those who graduate early or late, prefer to celebrate Reunion with a class other than the year in which they graduated.</div>
+					<div class="helper-text">With which class year would you like to celebrate your reunion?</div>
 					<div class="form-group">
 						<div class="info-wrapper">
 			    		<strong>School of Communication</strong><br>
@@ -1189,7 +1077,7 @@
 					
 					</div>	
 					<div class="helper-text">
-					Letter winner status will be confirmed by the Athletics Department.
+					Letter-winner status may be confirmed by the Department of Athletics and Recreation.
 				</div>			
 				</form>				
 			</div>
@@ -1274,7 +1162,7 @@
 								</select>
 							</div>
 							<div class="toggle-text">
-								Preferred Address?
+								This is where I want to receive mail from Northwestern
 								<button type="button" class="btn btn-xs btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
 							</div>
 						</div>
@@ -1317,7 +1205,7 @@
 					
 					<div class="form-group">
 						<label for="industries">Industries</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<div class="helper-text">For example: public relations, medicine, telecommunications</div>
 						<input style="outline: none;" name="industries" data-role="tagsinput" value="Engineering Services, Management, Consulting Services, Local Government, State Government, Federal Government, Agriculture">
 					
 					</div>				
@@ -1371,7 +1259,7 @@
 						</div>
 						<div class="form-group">
 							<label for="suffixes">Professional Suffix(es)</label>
-							<div class="helper-text">Helper text (e.g. helper)</div>
+							<div class="helper-text">For example: PhD, MD, JD</div>
 							<input style="outline: none;" name="suffixes" data-role="tagsinput" value="PhD">
 					
 						</div>	
@@ -1459,7 +1347,7 @@
 					
 					<div class="form-group">
 						
-						<label for="pref-email-type">Preferred Email Type</label>
+						<label for="pref-email-type">Use this email to contact me</label>
 						<select name="pref-email-type" class="form-control med-wide">
 							<option value=""></option>
 							<option value="personal">Personal</option>
@@ -1475,16 +1363,16 @@
 						<label for="business-email">Business Email</label>
 						<input name="business-email" class="form-control">
 						
-						<label for="vanity-email">Other Email</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<label for="vanity-email">Student Email</label>
+						<div class="helper-text">This is typically the email you provided Northwestern as a student.</div>
 						<input name="vanity-email" class="form-control">
 						
 						<label for="forwarding-email">Forwarding Email</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<div class="helper-text">We’ll forward emails from your “Lifetime”  addresses to this account.</div>
 						<input name="forwarding-email" class="form-control">
 						
 						<label for="nu-email">Lifetime Northwestern Email</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<div class="helper-text">This is your Northwestern Alumni Association email.</div>
 						<input name="nu-email" class="form-control uneditable" value="catrina.fields@alum.northwestern.edu">
 						
 					</div>
@@ -1519,7 +1407,7 @@
 					
 					<div class="form-group">
 						
-						<label for="pref-phone-type">Preferred Phone Type</label>
+						<label for="pref-phone-type">Use this phone number to contact me</label>
 						<select name="pref-phone-type" class="form-control med-wide">
 							<option value=""></option>
 							<option value="mobile" selected="true">Mobile Phone</option>
@@ -1534,7 +1422,6 @@
 						<input name="business-phone" class="form-control" value="312-435-3245">
 						
 						<label for="home-phone">Home Phone</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
 						<input name="home-phone" class="form-control">
 					</div>
 									
@@ -1634,19 +1521,18 @@
 					<div class="form-group">
 												
 						<label for="facebook-url">Facebook URL</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<div class="helper-text">For example: http://www.facebook.com/northwesternalumni/</div>
 						<input name="facebook-url" class="form-control">
 						
 						<label for="linkedin-url">LinkedIn URL</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<div class="helper-text">For example: http://www.linkedin.com/in/williewildcat</div>
 						<input name="linkedin-url" class="form-control">
 						
 						<label for="twitter-url">Twitter URL</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<div class="helper-text">For example: http://twitter.com/nualumni</div>
 						<input name="twitter-url" class="form-control">
 						
-						<label for="website-url">Website URL</label>
-						<div class="helper-text">Helper text (e.g. helper)</div>
+						<label for="website-url">Work or Personal Website</label>
 						<input name="website-url" class="form-control">
 						
 					</div>
