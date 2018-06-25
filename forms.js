@@ -1,7 +1,7 @@
 /* Some JS hacks to make forms more functional */
 
 $( document ).ready(function() {
-	
+
 	/* populate year, month and range options */
 	for(var y = 2018; y > 1940; y--){
 		$('select.year-range').append('<option value="' + y + '">' + y + '</option>');
@@ -77,7 +77,6 @@ $( document ).ready(function() {
 	/* delete button */	
 	$('.btn-delete.btn-primary').on('click', function(){
 		
-		console.log("this is working");
 		$(this).hide();
 		$(this).siblings('.btn-delete-confirmation-msg').show();
 		
@@ -166,10 +165,12 @@ $( document ).ready(function() {
 		if(this.checked){
 			$('input#end-date').hide();
 			$('div#end-date').show();
+			$('div#work-address').show();
 		}
 		else{
 			$('input#end-date').show();
 			$('div#end-date').hide();
+			$('div#work-address').hide();
 		}
 	})
 		
@@ -183,7 +184,6 @@ $( document ).ready(function() {
 	
 	$('a#edit-inline').on('click', function(){
 		
-		console.log('this worked');
 		
 		var wrapper = $(this).parent().parent().parent().parent();
 		
@@ -224,7 +224,6 @@ $( document ).ready(function() {
 		$(this).hide();
 		$(this).siblings('a').show();
 		
-		console.log($(this).parent().parent());
 		
 		var infoGroup = $(this).parent().parent();
 		
@@ -251,10 +250,6 @@ $( document ).ready(function() {
 		var nicknameStr = nickname.html();
 		var nameAtGrad = $('#names-lastname-at-grad.card-content-category-info');
 		var nameAtGradStr = nameAtGrad.html();
-		
-		console.log(fullnameStr);
-		console.log(nicknameStr);
-		console.log(nameAtGradStr);
 		
 		fullname.html('<input type="text" value="' + fullnameStr + '">');
 		nickname.html('<input type="text" value="' + nicknameStr + '">');
