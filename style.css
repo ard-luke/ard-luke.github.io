@@ -842,7 +842,7 @@ button.btn-delete-cancel.btn-primary:hover{
 	text-align: left;
 }
 
-.helper-text + * {
+.helper-text + :not(input) {
 	margin-top: 1rem;
 }
 
