@@ -73,6 +73,10 @@ html a {
 	cursor: pointer;
 }
 
+b, strong {
+	font-family: 'Akkurat Pro Bold';
+}
+
 /* TOP NAVBAR STYLES FROM EXISTING DIRECTORY */
 
 .page-header {
@@ -207,8 +211,13 @@ section.row {
 }
 
 .card-content-stacked-info {
-	width: 100%;
+	display      : -moz-box;       
+	display      : -ms-flexbox;   
+	display      : -webkit-box;     
+	display      : -webkit-flex;    
+	display      : flex;
 	margin-bottom: 1rem;
+	width        : 100%;
 }
 
 .card-content-category:last-child *:last-child {
@@ -219,7 +228,8 @@ section.row {
 	border      : none;
 	color       : #B6ACD1;
 	display     : block;
-	float       : left;
+	flex-grow   : 0;
+	flex-shrink : 0;
 	font-size   : 2.5rem;
 	height      : 50px;
 	margin-right: 1rem;
@@ -830,6 +840,10 @@ button.btn-delete-cancel.btn-primary:hover{
 	color     : #716C6B;
 	font-size : 0.8125rem;
 	text-align: left;
+}
+
+.helper-text + * {
+	margin-top: 1rem;
 }
 
 .privacy-text {
