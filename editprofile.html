@@ -128,7 +128,7 @@
 					    		</div>
 					    		<!-- Northwestern Education -->
 						    	<div class="card-content-category row no-gutters">
-							    	<div class="card-content-category-name col-12">Northwestern Degree(s)<a href="#" data-toggle="modal" data-target="#modalReunion"><i class="fas fa-pencil-alt"></i></a></div>
+							    	<div class="card-content-category-name col-12">Northwestern Degrees<a href="#" data-toggle="modal" data-target="#modalReunion"><i class="fas fa-pencil-alt"></i></a></div>
 							    	<div class="card-content-stacked-info card-content-stacked-info__flex">
 								    	<div class="logo-wrapper"><img src="NU_logo.jpg"></div>
 								    	<div class="info-wrapper">
@@ -447,7 +447,7 @@
 								    	<div class="logo-wrapper"></div>
 								    	<div class="info-wrapper">
 									    	<div class="info-group" id="address-work">
-									    		<div class="title"><span id="address-type">Work</span><a style="float:right;" data-toggle="modal" data-target="#modalHomeAddress"><i class="fas fa-pencil-alt"></i></a></div>
+									    		<div class="title"><span id="address-type">Work</span><a style="float:right;" data-toggle="modal" data-target="#modalWorkAddress"><i class="fas fa-pencil-alt"></i></a></div>
 											    <div id="address-line-1"><span class="helper-text">No information on file.</span></div>
 									    	</div>
 								    	</div>
@@ -530,7 +530,47 @@
 				<ul>
 				
 				<div class="card-content-category-name" style=" padding-bottom: 1rem;">Profile visibility for<br>other Our Northwestern members</div>
+
 				
+				<div class="card-content-stacked-info col-12">
+				<li><label>
+				<div class="logo-wrapper">
+					<input type="radio" id="full" name="privacy" value="full" checked="">
+					<div class="check"></div>
+				</div>
+				<div class="info-wrapper">
+				<div class="title">Full (Default)</div>
+				<div class="helper-text">All information will be visible to the Northwestern community, including all contact information.</div>
+				</div>
+				</label></li>
+				</div>
+
+				<div class="card-content-stacked-info col-12">
+				<li><label>
+				<div class="logo-wrapper">
+					<input type="radio" id="basic" name="privacy" value="basic">
+					<div class="check"></div>
+				</div>
+				<div class="info-wrapper">
+				<div class="title">Basic</div>
+				<div class="helper-text">All education and professional experience information will be visible to the Northwestern community, as well as your preferred phone number.</div>
+				</div>
+				</label></li>
+				</div>
+
+				<div class="card-content-stacked-info col-12">
+				<li><label>
+				<div class="logo-wrapper">
+					<input type="radio" id="limited" name="privacy" value="limited">
+					<div class="check"></div>
+				</div>
+				<div class="info-wrapper">
+				<div class="title">Limited </div>
+				<div class="helper-text">Only some education information and your preferred email address will be visible to the Northwestern community. Professional experience and other contact information will be hidden.</div>
+				</div>
+				</label></li>
+				</div>
+
 				<div class="card-content-stacked-info col-12">
 				<li><label>
 				<div class="logo-wrapper">
@@ -544,44 +584,9 @@
 				</label></li>
 				</div>
 				
-				<div class="card-content-stacked-info col-12">
-				<li><label>
-				<div class="logo-wrapper">
-					<input type="radio" id="limited" name="privacy" value="limited" checked="">
-					<div class="check"></div>
-				</div>
-				<div class="info-wrapper">
-				<div class="title">Limited (Default)</div>
-				<div class="helper-text">Only some education information and your preferred email address will be visible to the Northwestern community. Professional experience and other contact information will be hidden.</div>
-				</div>
-				</label></li>
-				</div>
-				
-				<div class="card-content-stacked-info col-12">
-				<li><label>
-				<div class="logo-wrapper">
-					<input type="radio" id="basic" name="privacy" value="basic">
-					<div class="check"></div>
-				</div>
-				<div class="info-wrapper">
-				<div class="title">Basic</div>
-				<div class="helper-text">All education and professional experience information will be visible to the Northwestern community, as well as your preferred phone number.</div>
-				</div>
-				</label></li>
-				</div>
-				
-				<div class="card-content-stacked-info col-12">
-				<li><label>
-				<div class="logo-wrapper">
-					<input type="radio" id="full" name="privacy" value="full">
-					<div class="check"></div>
-				</div>
-				<div class="info-wrapper">
-				<div class="title">Full</div>
-				<div class="helper-text">All information will be visible to the Northwestern community, including all contact information.</div>
-				</div>
-				</label></li>
-				</div>
+
+
+
 				
 				</ul>
 				
@@ -1080,7 +1085,7 @@
 						<input style="outline: none;" class="form-control" name="employer-name">
 						<label for="start-date" >From (MM/YY)</label>
 						<input name="start-date" type="text" class="form-control third-wide">
-						<label for="end-date" >To (MM/YY)</label>
+						<label for="end-date" id="end-date-label" >To <span>(MM/YY)</span></label>
 						<input id="end-date" name="end-date" type="text" class="form-control third-wide">
 						<div id="end-date" class="helper-text" style="display: none; margin-bottom: 31px;">Present</div>
 						<div class="toggle-text form-group">
@@ -1205,12 +1210,9 @@
 				<form class="form-content-wrapper">
 					
 					<div class="form-group">
-						<label for="first-name">First Name</label>
+						<label for="first-name">Full Name</label>
 						<input style="outline: none;" name="first-name" class="form-control">
-						<label for="middle-name">Middle Name</label>
-						<input style="outline: none;" name="middle-name" class="form-control">
-						<label for="last-name">Last Name</label>
-						<input style="outline: none;" name="last-name" class="form-control">
+						
 						<label for="nickname">Nickname</label>
 						<input style="outline: none;" name="nickname" class="form-control">
 						<label for="last-name-grad">Last Name at Graduation</label>
@@ -1317,7 +1319,7 @@
 						<select name="pref-email-type" class="form-control med-wide">
 							<option value=""></option>
 							<option value="personal">Personal</option>
-							<option value="business">Business</option>
+							<option value="business">Work</option>
 							<option value="vanity">Other Email</option>
 							<option value="forwarding">Forwarding Email</option>
 							<option value="nu">Lifetime Northwestern Email</option>
@@ -1326,11 +1328,11 @@
 						<label for="personal-email">Personal Email</label>
 						<input name="personal-email" class="form-control">
 						
-						<label for="business-email">Business Email</label>
+						<label for="business-email">Work Email</label>
 						<input name="business-email" class="form-control">
 						
 						<label for="vanity-email">Student Email</label>
-						<div class="helper-text">This is typically the email you provided Northwestern as a student.</div>
+						<div class="helper-text">This is typically the email Northwestern provided you as a student.</div>
 						<input name="vanity-email" class="form-control">
 						
 						<label for="forwarding-email">Forwarding Email</label>
@@ -1377,14 +1379,14 @@
 						<select name="pref-phone-type" class="form-control med-wide">
 							<option value=""></option>
 							<option value="mobile" selected="true">Mobile Phone</option>
-							<option value="business">Business Phone</option>
+							<option value="business">Work Phone</option>
 							<option value="home">Home Phone</option>
 						</select>
 						
 						<label for="mobile-phone">Mobile Phone</label>
 						<input name="mobile-phone" class="form-control" value="815-345-2943">
 						
-						<label for="business-phone">Business Phone</label>
+						<label for="business-phone">Work Phone</label>
 						<input name="business-phone" class="form-control" value="312-435-3245">
 						
 						<label for="home-phone">Home Phone</label>
@@ -1410,7 +1412,7 @@
 			
 			<div class="modal-header">
 				<button class="cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
-				<h5>Add Home Address</h5>
+				<h5>Edit Home Address</h5>
 				<button type="button" class="save-btn btn-primary">Save</button>
 
 			</div>
@@ -1450,7 +1452,72 @@
 								<option value="usa">United States of America</option>
 							</select>
 						<div class="toggle-text">
-						Preferred address?
+						This is where I want to receive mail from Northwestern
+						<button type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
+						</div>
+						
+					</div>
+									
+				</form>
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<!-- Work Address Modal -->
+<div class="modal" id="modalWorkAddress" tabindex="-1" role="dialog" aria-labelledby="modalWorkAddress" aria-hidden="true">
+<div class="vertical-alignment-helper">
+<div class="vertical-align-center">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<button class="cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+				<h5>Edit Work Address</h5>
+				<button type="button" class="save-btn btn-primary">Save</button>
+
+			</div>
+			
+			<div class="modal-body">
+			
+				<form class="form-content-wrapper">
+					
+					<div class="form-group">
+												
+						<label for="street-1">Street 1</label>
+						<input name="street-1" class="form-control">
+						
+						<label for="street-2">Street 2</label>
+						<input name="street-2" class="form-control">
+						
+						<label for="city">City</label>
+						<input name="city" class="form-control">
+						
+						<div class="form-wide">
+							<div class="med-wide">
+							<label for="state">State</label>
+							<select name="state" class="form-control">
+								<option value=""></option>
+								<option value="il">IL</option>
+							</select>
+							</div>
+							<div class="third-wide float-right">
+							<label for="zip">ZIP Code</label>
+							<input name="zip" type="text" class="form-control">
+							</div>
+						</div>
+						
+						<label for="country">Country</label>
+							<select name="country" class="form-control med-wide">
+								<option value=""></option>
+								<option value="usa">United States of America</option>
+							</select>
+						<div class="toggle-text">
+						This is where I want to receive mail from Northwestern
 						<button type="button" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off"><div class="handle"></div></button>
 						</div>
 						

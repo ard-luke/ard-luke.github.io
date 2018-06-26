@@ -158,6 +158,7 @@ $( document ).ready(function() {
 		$('#current-work').prop('checked', true);
 		$('#primary-employment-toggle').addClass('active');
 		$('input#end-date').hide();
+		$('label#end-date-label span').hide();
 		$('div#end-date').show();
 	});
 	
@@ -165,11 +166,13 @@ $( document ).ready(function() {
 		if(this.checked){
 			$('input#end-date').hide();
 			$('div#end-date').show();
+			$('label#end-date-label span').hide();
 			$('div#work-address').show();
 		}
 		else{
 			$('input#end-date').show();
 			$('div#end-date').hide();
+			$('label#end-date-label span').show();
 			$('div#work-address').hide();
 		}
 	})
