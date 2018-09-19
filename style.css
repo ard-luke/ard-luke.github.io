@@ -157,6 +157,76 @@ up-navbar a {
 		color: white;
 }
 
+/* PREVIEW MODE STYLES */
+
+.preview-bar {
+    display: block;
+    background-color: #5091CD;
+    background-image: linear-gradient(to bottom right, #5091CD, #5495d1);
+    z-index: 999999;
+    color: #f0f0f0;
+}
+
+.preview-bar-msg {
+    font-family: 'Akkurat Pro Regular', Helvetica Neue, Arial, sans-serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 14px 17px 14px 17px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	color: white;
+}
+
+.right a {
+	color: white;
+	text-decoration: underline;
+}
+
+.right a:hover {
+}
+
+.preview-bar-msg span {
+    color: white;
+    margin-right: 5px;
+}
+
+.preview-bar-msg svg{
+    margin-right: 8px;
+    color: white;
+}
+
+.preview-bar-msg svg:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px){
+	.left span {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.left{
+		float: none;
+		text-align: center;
+	}
+	.right {
+		clear:  both;
+		float: none;
+		text-align: center;
+	}
+}
+
 /* BOOTSTRAP BUTTON STYLES FROM EXISTING DIRECTORY */
 
 .btn-primary{margin:0 .5em .5em 0;padding:.8em 1em .7em 1em}.btn-action,.btn-primary{border:0 none;font-family:'Akkurat Pro Bold',Arial,'Lucida Grande',sans-serif;text-transform:uppercase;font-weight:400;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent;display:inline-block;vertical-align:middle;box-shadow:0 0 1px transparent;position:relative;transition-property:color;transition-duration:.2s}.btn-action:before,.btn-primary:before{content:"";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#b6acd1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;transition-duration:.2s;transition-timing-function:ease-out}.btn-action:hover:before,.btn-primary:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)}.btn-primary{min-width:165px}
