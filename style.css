@@ -79,6 +79,11 @@ b, strong {
 
 /* TOP NAVBAR STYLES FROM EXISTING DIRECTORY */
 
+up-navbar {
+	position: relative;
+	z-index: 999;
+}
+
 .page-header {
 	background-color: #4e2a84;
 	border-bottom   : 0 none;
@@ -210,6 +215,26 @@ up-navbar a {
     cursor: pointer;
 }
 
+.main-content-wrapper {
+	position: relative;
+	width: 100%;
+	z-index: -10;
+	animation: 0.5s ease-in-out dropDown;
+}
+
+@keyframes dropDown {
+	0% {
+    top: -49px;
+  }
+  30% {
+    top: -49px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+
 @media only screen and (max-width: 576px){
 	.left span {
 		display: block;
@@ -225,6 +250,24 @@ up-navbar a {
 		float: none;
 		text-align: center;
 	}
+	.main-content-wrapper {
+	position: relative;
+	width: 100%;
+	z-index: -10;
+	animation: 0.5s ease-in-out dropDownMobile;
+	}
+	
+	@keyframes dropDownMobile {
+	  0% {
+    top: -113px;
+  }
+  30% {
+    top: -113px;
+  }
+  100% {
+    top: 0px;
+	  }
+	  }
 }
 
 /* BOOTSTRAP BUTTON STYLES FROM EXISTING DIRECTORY */
