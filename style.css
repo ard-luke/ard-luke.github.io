@@ -216,22 +216,10 @@ up-navbar a {
 }
 
 .main-content-wrapper {
-	position: relative;
+	position: absolute;
 	width: 100%;
+	top: 5px;
 	z-index: -10;
-	animation: 0.5s ease-in-out dropDown;
-}
-
-@keyframes dropDown {
-	0% {
-    top: -49px;
-  }
-  30% {
-    top: -49px;
-  }
-  100% {
-    top: 0px;
-  }
 }
 
 
@@ -250,24 +238,6 @@ up-navbar a {
 		float: none;
 		text-align: center;
 	}
-	.main-content-wrapper {
-	position: relative;
-	width: 100%;
-	z-index: -10;
-	animation: 0.5s ease-in-out dropDownMobile;
-	}
-	
-	@keyframes dropDownMobile {
-	  0% {
-    top: -113px;
-  }
-  30% {
-    top: -113px;
-  }
-  100% {
-    top: 0px;
-	  }
-	  }
 }
 
 /* BOOTSTRAP BUTTON STYLES FROM EXISTING DIRECTORY */
