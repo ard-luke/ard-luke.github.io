@@ -222,6 +222,33 @@ up-navbar a {
 	z-index: -10;
 }
 
+.preview-button {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	padding: 10px 15px 10px 15px;
+	background-color: #5091CD;
+	color: white;
+	text-transform: uppercase;
+	font-family     : "Akkurat Pro Regular", sans-serif;
+	font-size       : 0.8rem;
+	-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent;display:inline-block;vertical-align:middle;box-shadow:0 0 1px transparent;
+}
+
+a.preview-button:hover {
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+.preview-button:before {
+	content:"";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#007FA4;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;transition-duration:.2s;transition-timing-function:ease-out
+}
+
+.preview-button:hover:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
 
 @media only screen and (max-width: 576px){
 	.left span {
@@ -450,6 +477,7 @@ a.add-new:hover #cross:before, a.add-new:hover #cross:after{
 	display: block;
 	height : 240px;
 	width  : 100%;
+	background-color: #c7a3e1;
 }
 
 .at-a-glance-picture-container {
